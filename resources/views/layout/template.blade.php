@@ -42,7 +42,7 @@
                 <title>@yield('title')</title>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-7">
               <ul class="nav navbar-nav search-nav">
                 <li>
                    <div class="search">
@@ -56,7 +56,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name"><span>Akihiko Avaron</span></li>
                   <li class="dropdown avatar-dropdown">
