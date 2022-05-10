@@ -21,14 +21,20 @@
     <link href="asset/css/style.css" rel="stylesheet">
     <!-- end: Css -->
 
+<<<<<<< HEAD
     <link rel="shortcut icon" href="asset/img/logomi.png">
 </head>
+=======
+	<!-- <link rel="shortcut icon" href="asset/img/logomi.png"> -->
+  </head>
+>>>>>>> 2286b02802427b01c2b37d1c481c5f2f91dde516
 
 <body id="mimin" class="dashboard">
     <!-- start: Header -->
     <nav class="navbar navbar-default header navbar-fixed-top">
         <div class="col-md-12 nav-wrapper">
             <div class="navbar-header col-md-2" style="width:100%;">
+<<<<<<< HEAD
                 <div class="opener-left-menu is-open">
                     <span class="top"></span>
                     <span class="middle"></span>
@@ -65,6 +71,39 @@
                             <ul class="">
                         </li>
                     </ul>
+=======
+              <div class="opener-left-menu is-open">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+              </div>
+            <div class="col-md-1">
+                <img src="connectsea\logo.png" width="50px" height="50px" class="logo-header">
+            </div>
+            <div class="col-1">
+                <title>@yield('title')</title>
+            </div>
+            <div class="col-md-7">
+              <ul class="nav navbar-nav search-nav">
+                <li>
+                   <div class="search">
+                    <span class="fa fa-search icon-search" style="font-size:23px;"></span>
+                    <div class="form-group form-animate-text">
+                      <input type="text" class="form-text" required>
+                      <span class="bar"></span>
+                      <label class="label-search">Type anywhere to <b>Search</b> </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="nav navbar-nav navbar-right user-nav">
+                <li class="user-name"><span>Akihiko Avaron</span></li>
+                  <li class="dropdown avatar-dropdown">
+                   <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
+                   <ul class="">
+>>>>>>> 2286b02802427b01c2b37d1c481c5f2f91dde516
                     </li>
                     <li><a href="#" class="opener-right-menu"><span class="fa fa-shopping-cart"></span></a></li>
                     </ul>
@@ -79,6 +118,7 @@
         <div id="left-menu">
             <div class="sub-left-menu scroll">
                 <ul class="nav nav-list">
+<<<<<<< HEAD
                     <li>
                         <div>
                             <center> <img src="connectsea\header-left.png" width="135px" height="135px"
@@ -93,6 +133,9 @@
                             <span class="fa fa-home" aria-hidden="true"></span> Home <span
                                 class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
+=======
+                    <li><div> <center> <img src="connectsea\header-left.png" width="135px" height="135px" class="header-left"> </center> </div></li>
+>>>>>>> 2286b02802427b01c2b37d1c481c5f2f91dde516
                     <li class="active ripple">
                         <a class="tree-toggle nav-header"><span class="fa fa-user"></span> Profile
                             <span class="fa-angle-right fa right-arrow text-right"></span>
@@ -130,9 +173,15 @@
                         <!-- end: Left Menu -->
 
 
+<<<<<<< HEAD
                         <!-- start: content -->
                         <div id="content">
                             <div class="col-md-12" style="padding:20px;">
+=======
+          <!-- start: content -->
+            <div id="content">
+                <div class="col-md-12 background-all" style="padding:20px;">
+>>>>>>> 2286b02802427b01c2b37d1c481c5f2f91dde516
 
                                 @yield("content")
 
@@ -142,6 +191,7 @@
 
                         </div>
 
+<<<<<<< HEAD
                         <!-- start: Mobile -->
                         <div id="mimin-mobile" class="reverse">
                             <div class="mimin-mobile-menu-list">
@@ -288,6 +338,12 @@
                         <script src="asset/js/jquery.min.js"></script>
                         <script src="asset/js/jquery.ui.min.js"></script>
                         <script src="asset/js/bootstrap.min.js"></script>
+=======
+    <!-- start: Javascript -->
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/jquery.ui.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+>>>>>>> 2286b02802427b01c2b37d1c481c5f2f91dde516
 
 
                         <!-- plugins -->

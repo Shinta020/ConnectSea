@@ -6497,3 +6497,7 @@ ul li a:focus {
 .logo-header{
     margin-top: 4px;
 }
+
+.background-all{
+    background-color: #002b80;
+}
