@@ -35,8 +35,6 @@
                 <span class="bottom"></span>
               </div>
 
-            <!-- coba lagi, masih belum  bisa -->
-
             <div class="col-md-1">
                 <img src="connectsea\logo.png" width="50px" height="50px" class="logo-header">
             </div>
