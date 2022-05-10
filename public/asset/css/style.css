@@ -6501,3 +6501,7 @@ ul li a:focus {
 .background-all{
     background-color: #002b80;
 }
+
+.keranjang-belanja-header {
+    margin-top: 7px;
+}
