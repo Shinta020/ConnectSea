@@ -1,5 +1,5 @@
 @extends("layout.template")
 
-@section("content")
+@section('content')
     ConnectSea
 @endsection

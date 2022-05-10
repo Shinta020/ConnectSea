@@ -40,11 +40,11 @@
             <div class="col-md-1">
                 <img src="connectsea\logo.png" width="50px" height="50px" class="logo-header">
             </div>
-            <div class="col-2">
+            <div class="col-1">
                 <title>@yield('title')</title>
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-8">
               <ul class="nav navbar-nav search-nav">
                 <li>
                    <div class="search">
@@ -58,7 +58,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name"><span>Akihiko Avaron</span></li>
                   <li class="dropdown avatar-dropdown">
@@ -67,7 +67,7 @@
                     </li>
                   </ul>
                 </li>
-                <li ><a href="#" class="opener-right-menu"><span class="fa fa-shopping-cart"></span></a></li>
+                <li><a href="#" class="opener-right-menu"><span class="fa fa-shopping-cart"></span></a></li>
               </ul>
             </div>
           </div>
@@ -86,7 +86,7 @@
                       <p class="animated fadeInRight">Sat,October 1st 2029</p>
                     </li> -->
                     <li class="active ripple">
-                      <a class="tree-toggle nav-header"><span class="fas fa-user"></span> Profile
+                      <a class="tree-toggle nav-header"><span class="fa fa-user"></span> Profile
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                     </li>
