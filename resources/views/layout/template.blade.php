@@ -22,33 +22,29 @@
 	<!-- end: Css -->
 
 	<link rel="shortcut icon" href="asset/img/logomi.png">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
  <body id="mimin" class="dashboard">
       <!-- start: Header -->
         <nav class="navbar navbar-default header navbar-fixed-top">
           <div class="col-md-12 nav-wrapper">
-            <div class="navbar-header" style="width:100%;">
+            <div class="navbar-header col-md-2" style="width:100%;">
               <div class="opener-left-menu is-open">
                 <span class="top"></span>
                 <span class="middle"></span>
                 <span class="bottom"></span>
               </div>
 
-            <!-- coba lagi, masih belum bisa -->
-            <div>
-                <img src="connectsea\logo.png" width="15px" height="15px">
+            <!-- coba lagi, masih belum  bisa -->
+
+            <div class="col-md-1">
+                <img src="connectsea\logo.png" width="50px" height="50px" class="logo-header">
             </div>
-            <div>
+            <div class="col-2">
                 <title>@yield('title')</title>
             </div>
 
-
+            <div class="col-md-7">
               <ul class="nav navbar-nav search-nav">
                 <li>
                    <div class="search">
@@ -61,21 +57,13 @@
                   </div>
                 </li>
               </ul>
-
+            </div>
+            <div class="col-md-3">
               <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name"><span>Akihiko Avaron</span></li>
                   <li class="dropdown avatar-dropdown">
                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="">
-                     <!-- <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li> -->
-                     <!-- <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li> -->
-                     <!--<li role="separator" class="divider"></li>
-                     <li class="more"> -->
-                     <!-- <ul>
-                        <li><a href=""><span class="fa fa-cogs"></span></a></li>
-                        <li><a href=""><span class="fa fa-lock"></span></a></li>
-                        <li><a href=""><span class="fa fa-power-off "></span></a></li>
-                      </ul>-->
                     </li>
                   </ul>
                 </li>
@@ -98,75 +86,30 @@
                       <p class="animated fadeInRight">Sat,October 1st 2029</p>
                     </li> -->
                     <li class="active ripple">
-                      <a class="tree-toggle nav-header"><span class="fa-home fa"></span> Profile
+                      <a class="tree-toggle nav-header"><span class="fas fa-user"></span> Profile
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
-                      <ul class="nav nav-list tree">
-                          <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                          <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
-                      </ul>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span> Chat
+                        <span class="fa fa-envelope" aria-hidden="true"></span> Chat
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
-                      </ul>
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-area-chart fa"></span> History Orders
+                        <span class="fa fa-history" aria-hidden="true"></span> History Orders
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="chartjs.html">ChartJs</a></li>
-                        <li><a href="morris.html">Morris</a></li>
-                        <li><a href="flot.html">Flot</a></li>
-                        <li><a href="sparkline.html">SparkLine</a></li>
-                      </ul>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header">
-                    <span class="fa fa-pencil-square"></span> Offer and Promo <span class="fa-angle-right fa right-arrow text-right"></span> </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="color.html">Color</a></li>
-                        <li><a href="weather.html">Weather</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="icons.html">Icons</a></li>
-                        <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="panels.html">Panels & Tabs</a></li>
-                        <li><a href="notifications.html">Notifications & Tooltip</a></li>
-                        <li><a href="badges.html">Badges & Label</a></li>
-                        <li><a href="progress.html">Progress</a></li>
-                        <li><a href="sliders.html">Sliders</a></li>
-                        <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="modal.html">Modals</a></li>
-                      </ul>
+                    <span class="fa fa-tag" aria-hidden="true"></span> Offer and Promo <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Privacy Policy <span class="fa-angle-right fa right-arrow text-right"></span> </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="formelement.html">Form Element</a></li>
-                        <li><a href="#">Wizard</a></li>
-                        <li><a href="#">File Upload</a></li>
-                        <li><a href="#">Text Editor</a></li>
-                      </ul>
+                    <li class="ripple"><a class="tree-toggle nav-header"><span class="'fa fa-file"></span> Privacy Policy <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Help <span class="fa-angle-right fa right-arrow text-right"></span> </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="datatables.html">Data Tables</a></li>
-                        <li><a href="handsontable.html">handsontable</a></li>
-                        <li><a href="tablestatic.html">Static</a></li>
-                      </ul>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-envelope-o"></span> Start Selling <span class="fa-angle-right fa right-arrow text-right"></span> </a>
-                      <ul class="nav nav-list tree">
-                        <li><a href="mail-box.html">Inbox</a></li>
-                        <li><a href="compose-mail.html">Compose Mail</a></li>
-                        <li><a href="view-mail.html">View Mail</a></li>
-                      </ul>
+                    <li class="ripple "><a class="tree-toggle nav-header"><span class="fa-solid fa-store"></span> Start Selling <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Sign Out <span class="fa-angle-right fa right-arrow text-right"></span> </a>
           <!-- end: Left Menu -->

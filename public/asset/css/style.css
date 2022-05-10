@@ -6493,3 +6493,7 @@ ul li a:focus {
 .header-left{
     padding: 10px;
 }
+
+.logo-header{
+    margin-top: 4px;
+}
