@@ -8,7 +8,7 @@
     <meta name="author" content="Isna Nur Azis">
     <meta name="keyword" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Miminium</title>
+    <title>ConnectSea</title>
 
     <!-- start: Css -->
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -131,9 +131,16 @@
                     <li class="ripple"><a class="tree-toggle nav-header"><span class="fas fa-archive"></span>
                             Start Selling <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span
-                                class="fa fa-check-square-o"></span> Sign Out <span
-                                class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    <li class="ripple">
+                        <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        <span class="fa fa-check-square-o"></span> Sign Out
+                        <span class="fa-angle-right fa right-arrow text-right"></span></a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
                         <!-- end: Left Menu -->
 
 
