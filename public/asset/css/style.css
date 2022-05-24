@@ -6273,9 +6273,9 @@ ul li a:focus {
 
 
 /*========Responsive========*/
-@media (max-width: 1200px) {
+@media (max-width: 200px) {
   #content{
-    padding-left: 230px;
+    padding-left: 0px;
     padding-right: 0px
   }
   .profile-v1 .profile-v1-cover{margin-bottom: 0px !important;min-height: inherit !important;max-height: inherit !important;}
@@ -6505,3 +6505,8 @@ ul li a:focus {
 .keranjang-belanja-header {
     margin-top: 7px;
 }
+
+.konten{
+    padding: 10px;
+}
+

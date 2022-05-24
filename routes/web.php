@@ -19,7 +19,17 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/ofpro', function () {
+    return view('offerpromo.ofpro');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/logout', 'LoginController@logout');
+
+//offer dan promo
+Route::get('/ofpro', 'OdpController@ofpro');
+
+
