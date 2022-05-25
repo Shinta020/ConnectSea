@@ -22,6 +22,9 @@ Route::get('/home', function () {
 Route::get('/ofpro', function () {
     return view('offerpromo.ofpro');
 });
+Route::get('/ikan', function () {
+    return view('productikan.ikan');
+});
 
 Auth::routes();
 
@@ -34,3 +37,5 @@ Route::get('/ofpro', 'OdpController@ofpro');
 
 Route::get('/profile', 'ProfileController@profile');
 Route::get('/profile/edit', 'EditProfileController@edit');
+
+Route::get('/ikan', 'ProductIkan@ikan');
