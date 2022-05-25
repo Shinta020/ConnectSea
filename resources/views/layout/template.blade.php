@@ -98,11 +98,11 @@
                         </div>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header">
-                            <span class="fa fa-home" aria-hidden="true"></span> Home <span
+                            <a href="/home"><span class="fa fa-home" aria-hidden="true"></span> Home <span
                                 class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li class="active ripple">
-                        <a class="tree-toggle nav-header"><span class="fa fa-user"></span> Profile
+                        <a href="/profile"><span class="fa fa-user" ></span> Profile
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>

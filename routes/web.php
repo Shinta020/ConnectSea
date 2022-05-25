@@ -32,4 +32,5 @@ Route::get('/logout', 'LoginController@logout');
 //offer dan promo
 Route::get('/ofpro', 'OdpController@ofpro');
 
-
+Route::get('/profile', 'ProfileController@profile');
+Route::get('/profile/edit', 'EditProfileController@edit');
