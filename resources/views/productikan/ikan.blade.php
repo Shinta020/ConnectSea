@@ -14,7 +14,7 @@
                 <img src="connectsea\kakapmerah.jpg" alt="" width="170px"class="bl-image-group__img rounded">
                 <div class="bl-image-group__body">
                     <p class="bl-text bl-text--subheading-3 bl-text--ellipsis__2">
-                    KAKAP MERAH <br> Rp 70.000/KG
+                    <a href="/getdetailproduk/1">Ikan Mas</a> <br> Rp 70.000/KG
                     </p>
                 </div>
             </a>
