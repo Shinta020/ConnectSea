@@ -102,7 +102,7 @@
                             class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li>
-                        <a class=" nav-header">
+                        <a href="/profile" class=" nav-header">
                             <span class="fa fa-user"></span> Profile
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
