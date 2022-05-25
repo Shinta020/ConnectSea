@@ -97,40 +97,40 @@
                                     class="header-left"> </center>
                         </div>
                     </li>
-                    <li><a class="tree-toggle nav-header">
+                    <li><a href="home" class=" nav-header">
                         <span class="fa fa-home" aria-hidden="true"></span> Home <span
                             class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li>
-                        <a class="tree-toggle nav-header">
+                        <a class=" nav-header">
                             <span class="fa fa-user"></span> Profile
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>
                     <li>
-                        <a class="tree-toggle nav-header">
+                        <a class=" nav-header">
                             <span class="fa fa-envelope" aria-hidden="true"></span> Chat
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>
                     <li>
-                        <a class="tree-toggle nav-header">
+                        <a class=" nav-header">
                             <span class="fa fa-history" aria-hidden="true"></span> History Orders
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>
-                    <li><a href="" class="tree-toggle nav-header">
+                    <li><a href="/ofpro" class="  nav-header">
                             <span class="fa fa-tags" aria-hidden="true"></span> Offer and Promo <span
                                 class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li><a class="tree-toggle nav-header"><span
+                    <li><a class=" nav-header"><span
                                 class="fa fa-sticky-note-o"></span>
                             Privacy Policy <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li><a class="tree-toggle nav-header"><span class="fa fa-shield"></span>
+                    <li><a class=" nav-header"><span class="fa fa-shield"></span>
                             Help <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li><a class="tree-toggle nav-header"><span class="fas fa-archive"></span>
+                    <li><a class="nav-header"><span class="fas fa-archive"></span>
                             Start Selling <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li>
