@@ -47,11 +47,11 @@
                 <div class="col-md-1">
                     <img src="connectsea\logo.png" width="50px" height="50px" class="logo-header">
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-0">
                     <title>@yield('title')</title>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <ul class="nav navbar-nav search-nav">
                         <li>
                             <div class="search">
@@ -97,42 +97,43 @@
                                     class="header-left"> </center>
                         </div>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header">
-                            <a href="/home"><span class="fa fa-home" aria-hidden="true"></span> Home <span
-                                class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    <li><a class="tree-toggle nav-header">
+                        <span class="fa fa-home" aria-hidden="true"></span> Home <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="active ripple">
-                        <a href="/profile"><span class="fa fa-user" ></span> Profile
+                    <li>
+                        <a class="tree-toggle nav-header">
+                            <span class="fa fa-user"></span> Profile
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>
-                    <li class="ripple">
+                    <li>
                         <a class="tree-toggle nav-header">
                             <span class="fa fa-envelope" aria-hidden="true"></span> Chat
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>
-                    <li class="ripple">
+                    <li>
                         <a class="tree-toggle nav-header">
                             <span class="fa fa-history" aria-hidden="true"></span> History Orders
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header">
+                    <li><a href="" class="tree-toggle nav-header">
                             <span class="fa fa-tags" aria-hidden="true"></span> Offer and Promo <span
                                 class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span
+                    <li><a class="tree-toggle nav-header"><span
                                 class="fa fa-sticky-note-o"></span>
                             Privacy Policy <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-shield"></span>
+                    <li><a class="tree-toggle nav-header"><span class="fa fa-shield"></span>
                             Help <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="ripple"><a class="tree-toggle nav-header"><span class="fas fa-archive"></span>
+                    <li><a class="tree-toggle nav-header"><span class="fas fa-archive"></span>
                             Start Selling <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li class="ripple">
+                    <li>
                         <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -148,11 +149,8 @@
 
                         <!-- start: content -->
                         <div id="content">
-                            <div class="header-left">
 
                                 @yield("content")
-
-                            </div>
 
                         </div>
                         <!-- end: content -->

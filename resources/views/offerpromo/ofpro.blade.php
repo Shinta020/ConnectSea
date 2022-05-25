@@ -1,11 +1,19 @@
 @extends('layout.template')
 
-@section('title', 'Offer and Promo')
+@section('title', 'offer and promo')
 
 @section('content')
 
-<div class="container">
-    <br>
+<div class="container header-left background-all">
+    <div>
+    <div class="col-4"></div>
+    <div class="col-4 bcgrnd">
+        <center><h2 class="ofpro-font">6.6 Special Offer</h2></center>
+    </div>
+    <div class="col-4"></div>
+    </div>
+
+    <div class="bcgrnd">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -16,30 +24,22 @@
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox"  >
 
         <div class="item active">
-            <img src="connectsea\ofpro.h1.jpg" alt="promo1" width="50" height="10">
-          <div class="carousel-caption">
-            <h3>Chania</h3>
-            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-          </div>
+            <img src="connectsea\ofpro.h1.jpg" alt="promo1">
         </div>
 
         <div class="item">
-            <img src="connectsea\ofpro.h2.jpg" alt="promo2" width="50" height="10">
-          <div class="carousel-caption">
-            <h3>Chania</h3>
-            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-          </div>
+            <img src="connectsea\ofpro.h2.jpg" alt="promo2">
         </div>
 
         <div class="item">
-            <img src="connectsea\ofpro.h3.jpg" alt="promo3" width="50" height="10">
-          <div class="carousel-caption">
-            <h3>Flowers</h3>
-            <p>Beautiful flowers in Kolymbari, Crete.</p>
-          </div>
+            <img src="connectsea\ofpro.h3.jpg" alt="promo3">
+        </div>
+
+        <div class="item">
+            <img src="connectsea\ofpro.h4.jpg" alt="promo4">
         </div>
 
       </div>
@@ -54,6 +54,38 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
+    </div>
+    <br>
+    <div>
+        <div class="col-4"></div>
+        <div class="col-4 bcgrnd">
+            <center><h2 class="ofpro-font">Diskon terus s/d 50%</h2></center>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div>
+        <div class="col-sm-2">
+            <img src="connectsea\Diskon1.png" alt="diskon1" width="150" height="150">
+        </div>
+        <div class="col-sm-2">
+            <img src="connectsea\Diskon2.png" alt="diskon2" width="150" height="150">
+        </div>
+        <div class="col-sm-2">
+            <img src="connectsea\Diskon3.png" alt="diskon3" width="150" height="150">
+        </div>
+        <div class="col-sm-2">
+            <img src="connectsea\Diskon4.png" alt="diskon4" width="150" height="150">
+        </div>
+        <div class="col-sm-2">
+            <img src="connectsea\Diskon5.png" alt="diskon5" width="150" height="150">
+        </div>
+        <div class="col-sm-2">
+            <img src="connectsea\Diskon6.png" alt="diskon6" width="150" height="150">
+            <a href="#" class="next">&#8250;</a>
+        </div>
+    </div>
+    <br>
+</div>
+
 
 @endsection
