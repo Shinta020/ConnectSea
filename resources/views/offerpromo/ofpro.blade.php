@@ -84,7 +84,36 @@
             <a href="#" class="next">&#8250;</a>
         </div>
     </div>
-    <br>
+    <br><br><br><br><br><br><br><br>
+    <div>
+        <div>
+            <div class="col-4"></div>
+            <div class="col-4 bcgrnd">
+                <center><h2 class="ofpro-font">Voucher dan Gratis Ongkir</h2></center>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div class="col-sm-6">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                    </div>
+                </li>
+                <li>
+                    <div class="col-sm-6">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 
