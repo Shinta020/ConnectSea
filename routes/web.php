@@ -39,3 +39,5 @@ Route::get('/profile', 'ProfileController@profile');
 Route::get('/profile/edit', 'EditProfileController@edit');
 
 Route::get('/ikan', 'ProductIkan@ikan');
+
+
