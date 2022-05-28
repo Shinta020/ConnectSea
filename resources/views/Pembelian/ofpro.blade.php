@@ -65,22 +65,22 @@
     </div>
     <div>
         <div class="col-sm-2">
-            <img src="connectsea\Diskon1.png" alt="diskon1" width="150" height="150">
+            <a href=""> <img src="connectsea\Diskon1.png" alt="diskon1" width="150" height="150"> </a>
         </div>
         <div class="col-sm-2">
-            <img src="connectsea\Diskon2.png" alt="diskon2" width="150" height="150">
+            <a href=""> <img src="connectsea\Diskon2.png" alt="diskon2" width="150" height="150"> </a>
         </div>
         <div class="col-sm-2">
-            <img src="connectsea\Diskon3.png" alt="diskon3" width="150" height="150">
+            <a href=""> <img src="connectsea\Diskon3.png" alt="diskon3" width="150" height="150"> </a>
         </div>
         <div class="col-sm-2">
-            <img src="connectsea\Diskon4.png" alt="diskon4" width="150" height="150">
+            <a href=""> <img src="connectsea\Diskon4.png" alt="diskon4" width="150" height="150"> </a>
         </div>
         <div class="col-sm-2">
-            <img src="connectsea\Diskon5.png" alt="diskon5" width="150" height="150">
+            <a href=""> <img src="connectsea\Diskon5.png" alt="diskon5" width="150" height="150"> </a>
         </div>
         <div class="col-sm-2">
-            <img src="connectsea\Diskon6.png" alt="diskon6" width="150" height="150">
+            <a href=""> <img src="connectsea\Diskon6.png" alt="diskon6" width="150" height="150"> </a>
             <a href="#" class="next">&#8250;</a>
         </div>
     </div>
@@ -97,18 +97,28 @@
             <ul>
                 <li>
                     <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                        <ul>
+                        <li>
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
+                        <button height="75" width="75"></i>> <p id="demo">Klaim</p> </button> </li></ul>
+                        <script>
+                            document.getElementById("demo").onclick = function() {myFunction()};
+
+                            function myFunction() {
+                                document.getElementById("demo").innerHTML = "Diklaim";
+                            }
+                        </script>
                     </div>
                     <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
                     </div>
                 </li>
                 <li>
                     <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
                     </div>
                     <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="450" height="75">
+                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
                     </div>
                 </li>
             </ul>

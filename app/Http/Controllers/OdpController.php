@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class OdpController extends Controller
 {
     public function ofpro(){
-		return view('offerpromo.ofpro');
+		return view('Pembelian.ofpro');
 	}
 }
