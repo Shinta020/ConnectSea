@@ -20,7 +20,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/ofpro', function () {
-    return view('offerpromo.ofpro');
+    return view('Pembelian.ofpro');
 });
 Route::get('/ikan', function () {
     return view('productikan.ikan');
