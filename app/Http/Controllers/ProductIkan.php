@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ProductIkan extends Controller
 {
     public function ikan(){
-		return view('productikan.ikan');
+		return view('Pembelian.ikan');
 	}
 }

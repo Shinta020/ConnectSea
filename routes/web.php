@@ -23,7 +23,7 @@ Route::get('/ofpro', function () {
     return view('Pembelian.ofpro');
 });
 Route::get('/ikan', function () {
-    return view('productikan.ikan');
+    return view('Pembelian.ikan');
 });
 
 Auth::routes();
@@ -37,6 +37,8 @@ Route::get('/ofpro', 'OdpController@ofpro');
 
 Route::get('/profile', 'ProfileController@profile');
 Route::get('/profile/edit', 'EditProfileController@edit');
+
+//product ikan
 
 Route::get('/ikan', 'ProductIkan@ikan');
 

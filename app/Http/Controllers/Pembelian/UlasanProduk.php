@@ -23,7 +23,7 @@ public function getDetailProduk($kodeproduk)
     if ($ulasan->isEmpty()) {
         $jumlahulasan = 0 ;
     }
-    return view('productikan.detail',["produk" =>$produk,"ulasan"=>$ulasan,"jumlahulasan" =>$jumlahulasan]) ;
+    return view('pembelian.detail',["produk" =>$produk,"ulasan"=>$ulasan,"jumlahulasan" =>$jumlahulasan]) ;
 }
 
     //Septica Tiara Indah Permatasari
