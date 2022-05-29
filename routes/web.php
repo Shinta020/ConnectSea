@@ -43,11 +43,12 @@ Route::get('/profile/edit/{id}', 'ProfileController@edit');
 Route::post('/profile/update','ProfileController@update');
 Route::get('/profile/delete/{id}','ProfileController@delete');
 
-//product ikan
-
-Route::get('/ikan', 'ProductIkan@ikan');
-
+//product per kategori
 //by Septica Tiara Indah Permatasari
+Route::get('/ikan', 'ProductIkan@ikan');
+Route::get('/bibit', 'ProductBibit@bibit');
+Route::get('/pakanikan', 'ProductPakan@pakanikan');
+
 Route::get('/produk','Pembelian\UlasanProduk@displayProduk');
 
 Route::get('/getdetailproduk/{kodeproduk}','Pembelian\UlasanProduk@getDetailProduk');
