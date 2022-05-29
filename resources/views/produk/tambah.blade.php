@@ -1,57 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Input Produk</title>
-</head>
-<body>
+@extends('layout.template')
+@section('content')
+    <div class="container">
+        <form class="form-horizontal" action="/pegawai/store" method="post">
+            {{ csrf_field() }}
 
-	<h2><a href="https://www.malasngoding.com">Input Produk</a></h2>
-	<h3>Data Produk</h3>
-
-	<a href="/produk"> Kembali</a>
-
-	<br/>
-	<br/>
-
-	<form action="/produk/store" method="post">
-		{{ csrf_field() }}
-		<div class="col-8" style="color:black">
-            <div class="row">
-                <label class="col-3" for="namaproduk"> Nama Produk </label>
-                <div class="col-1">:</div>
-                <div class="col-8">
-                    <input type="text" name="namaproduk" required="required" style="width: 100%">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="kategori">Kategori Produk</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <select class="form-control" id="kategori" name="kategori">
+                        <option>Hasil Laut</option>
+                        <option>Bibit</option>
+                        <option>Pakan</option>
+                    </select>
                 </div>
             </div>
-            <br/>
-            <div class="row">
-                <label class="col-3" for="harga"> Harga </label>
-                <div class="col-1">:</div>
-                <div class="col-8">
-                    <input type="text" name="harga" required="required" style="width: 100%">
-                </div>
-            </div>
-            <br/>
 
-            <div class="row">
-                <label class="col-3" for="descproduk"> Deskripsi </label>
-                <div class="col-1">:</div>
-                <div class="col-8">
-                    <textarea name="descproduk" required="required" style="width: 100%"></textarea>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="namaproduk">Nama Produk</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="namaproduk" name="namaproduk" required="required">
                 </div>
             </div>
-            <br/>
-            <div class="row">
-                <label class="col-3" for="imgproduk">Select a Picture</label>
-                <div class="col-1">:</div>
-                <div class="col-8">
-                    <input type="file" name="imgproduk">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="harga">Harga</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" id="harga" name="harga" required="required">
                 </div>
             </div>
-            <br/>
-            <center><button type="submit" class="col-2 form-control btn-secondary">Input Produk</button></center>
-        </div>
-	</form>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="berat">Berat</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" id="berat" name="berat" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="descproduk">Deskripsi</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <textarea class="form-control" rows="5" id="descproduk" name="descproduk" required="required"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="imgproduk">Foto Produk</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <input type="file" class="form-control" id="imgproduk" name="imgproduk" required="required">
+                </div>
+            </div>
+            <center><button type="submit" class="col-2 form-control btn-secondary">Simpan Data</button></center>
+        </form>
+    </div>
 
-</body>
-</html>
+@endsection

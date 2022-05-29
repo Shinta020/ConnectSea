@@ -29,8 +29,10 @@ class ProdukController extends Controller
     {
         // insert data ke table produk
         DB::table('produk')->insert([
+            'kategoriproduk' => $request->kategori,
             'namaproduk' => $request->namaproduk,
             'harga' => $request->harga,
+            'beratproduk' => $request->berat,
             'descproduk' => $request->descproduk,
             'imgproduk' => $request->imgproduk
         ]);

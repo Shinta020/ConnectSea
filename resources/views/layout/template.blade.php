@@ -34,6 +34,9 @@
 </head>
 
 <body id="mimin" class="dashboard">
+
+    <div class="container-fluid">
+
     <!-- start: Header -->
     <nav class="navbar navbar-default header navbar-fixed-top">
         <div class="col-md-12 nav-wrapper">
@@ -449,6 +452,7 @@
                                     })(jQuery);
                                 </script>
                                 <!-- end: Javascript -->
+    </div>
 </body>
 
 </html>
