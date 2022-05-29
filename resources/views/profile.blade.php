@@ -8,15 +8,15 @@
           <div class="text-center">
             <img src="connectsea\foto-profil-2.jpg" width="100px" height="100px" class="img-circle">
           </div>
-          <h3 class="profile-username text-center">Akihiko Avaron</h3>
-          <p class="text-muted text-center">Bergabung sejak : 20 Des 2020</p>
+          @foreach($users as $p)
+          <h3 class="profile-username text-center" value="{{ $p->name }}" >{{ $p->name }}</h3>
           <hr>
           <strong>
             <i class="fas fa-map-marker mr-2"></i>
             Alamat
           </strong>
           <p class="text-muted">
-            Sidoarjo, Jawa Timur
+            {{ $p->alamat }}
           </p>
           <hr>
           <strong>
@@ -24,7 +24,7 @@
             Email
           </strong>
           <p class="text-muted">
-            akahikoa@gmail.com
+            {{ $p->email }}
           </p>
           <hr>
           <strong>
@@ -32,10 +32,12 @@
             No Tlp
           </strong>
           <p class="text-muted">
-            081284025527
+            {{ $p->notelp }}
           </p>
           <hr>
-          <a href="/profile/edit" class="btn btn-primary btn-block">Edit Profile</a>
+          <a href="/profile/edit/{{ $p->id }}" class="btn btn-primary btn-block">Edit Profile</a>
+          <a href="/profile/delete/{{ $p->id }}" class="btn btn-danger btn-block">Delete Account</a>
+        @endforeach
         </div>
       </div>
     </div>
@@ -53,8 +55,8 @@
             <br>
             <a href="/profile/edit" class="btn btn-info btn-block">Change Password</a>
             <br>
-            <a href="/profile/edit" class="btn btn-danger btn-block">Delete Account</a>
-          </div>
+
+            </div>
         </div>
       </div>
   </div>

@@ -1,6 +1,19 @@
 @extends('layout.template')
 @section('content')
-<div class="container-fluid">
+@foreach($users as $p)
+	<form action="/profile/update" method="post">
+		{{ csrf_field() }}
+		<input type="hidden" name="id" value="{{ $p->id }}"> <br/>
+		Nama <input type="text" required="required" name="nama" value="{{ $p->name }}"> <br/>
+		Alamat <textarea required="required" name="alamat">{{ $p->alamat }}</textarea> <br/>
+        No. Telp <input type="number" required="required" name="notelp" value="{{ $p->notelp }}"> <br/>
+		Email <input type="text" required="required" name="email" value="{{ $p->email }}"> <br/>
+		 <br/>
+		<input type="submit" value="Simpan Data">
+	</form>
+@endforeach
+
+{{-- <div class="container-fluid">
   <div class="row">
     <div class="col col-lg-4 col-md-4">
       <div class="card card-primary card-outline">
@@ -41,5 +54,5 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 @endsection

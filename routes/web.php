@@ -35,8 +35,11 @@ Route::get('/logout', 'LoginController@logout');
 //offer dan promo
 Route::get('/ofpro', 'OdpController@ofpro');
 
+//by Belva Rizki Mufidah
 Route::get('/profile', 'ProfileController@profile');
-Route::get('/profile/edit', 'EditProfileController@edit');
+Route::get('/profile/edit/{id}', 'ProfileController@edit');
+Route::post('/profile/update','ProfileController@update');
+Route::get('/profile/delete/{id}','ProfileController@delete');
 
 //product ikan
 
@@ -51,5 +54,9 @@ Route::get('/getdetailproduk/{kodeproduk}','Pembelian\UlasanProduk@getDetailProd
 Route::get('/produk','ProdukController@index');
 Route::get('/produk/tambah','ProdukController@tambah');
 Route::post('/produk/store','ProdukController@store');
+
+
+//route keranjang belanja
+Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@cart');
 
 
