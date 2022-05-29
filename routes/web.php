@@ -43,8 +43,13 @@ Route::get('/profile/edit', 'EditProfileController@edit');
 Route::get('/ikan', 'ProductIkan@ikan');
 
 //by Septica Tiara Indah Permatasari
-Route::get('/produk','Pembelian\UlasanProduk@displayProduk') ;
+Route::get('/produk','Pembelian\UlasanProduk@displayProduk');
 
-Route::get('/getdetailproduk/{kodeproduk}','Pembelian\UlasanProduk@getDetailProduk') ;
+Route::get('/getdetailproduk/{kodeproduk}','Pembelian\UlasanProduk@getDetailProduk');
+
+//Input Produk by Cahya
+Route::get('/produk','ProdukController@index');
+Route::get('/produk/tambah','ProdukController@tambah');
+Route::post('/produk/store','ProdukController@store');
 
 
