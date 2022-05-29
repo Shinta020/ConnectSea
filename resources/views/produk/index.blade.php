@@ -14,7 +14,7 @@
         @foreach($produk as $p)
 
         <div class="row">
-            <label class="col-3" for="namaproduk"> Nama Produk </label>
+            <label class="col-3" for="kategoriproduk"> Kategori Produk </label>
             <div class="col-1">:</div>
             <div class="col-8">
                 {{ $p->kategoriproduk }}

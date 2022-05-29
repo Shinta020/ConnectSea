@@ -1,18 +1,27 @@
 @extends('layout.template')
 @section('content')
     <div class="container">
-        <form class="form-horizontal" action="/pegawai/store" method="post">
+        <form class="form-horizontal" action="/produk/store" method="post">
             {{ csrf_field() }}
-
+            <!--
             <div class="form-group">
-                <label class="control-label col-sm-2" for="kategori">Kategori Produk</label>
+                <label class="control-label col-sm-2" for="kategoriproduk">Kategori Produk</label>
                 <div class="col-sm-1">:</div>
                 <div class="col-sm-9">
-                    <select class="form-control" id="kategori" name="kategori">
+                    <select class="form-control" id="kategoriproduk" name="kategoriproduk">
                         <option>Hasil Laut</option>
                         <option>Bibit</option>
                         <option>Pakan</option>
                     </select>
+                </div>
+            </div>
+            -->
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="kategoriproduk">Kategori Produk</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="kategoriproduk" name="kategoriproduk" required="required">
                 </div>
             </div>
 
