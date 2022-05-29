@@ -32,9 +32,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout', 'LoginController@logout');
 
-//offer dan promo
-Route::get('/ofpro', 'OdpController@ofpro');
-
 //by Belva Rizki Mufidah
 Route::get('/profile', 'ProfileController@profile');
 Route::get('/profile/edit/{id}', 'ProfileController@edit');
@@ -58,5 +55,11 @@ Route::post('/produk/store','ProdukController@store');
 
 //route keranjang belanja
 Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@cart');
+
+// Shinta - Offer and Promo
+Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');
+Route::get('/ofpro2', 'Pembelian\OfferandPromo@index');
+Route::get('/ofpro2/tambah','Pembelian\OfferandPromo@tambah');
+Route::post('/ofpro2/store','Pembelian\OfferandPromo@store');
 
 
