@@ -25,7 +25,12 @@ Route::get('/ofpro', function () {
 Route::get('/ikan', function () {
     return view('Pembelian.ikan');
 });
-
+Route::get('/privacypolicy', function () {
+    return view('dataakun.privacypolicy');
+});
+Route::get('/help', function () {
+    return view('dataakun.help');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

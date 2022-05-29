@@ -71,7 +71,10 @@
 
                 <div class="col-md-2">
                     <ul class="nav navbar-nav navbar-right user-nav">
-                        <li class="user-name"><span>Akihiko Avaron</span></li>
+                        <li class="user-name"><span>
+                                {{ Auth::user()->name }} </span>
+                        </li>
+                        <!-- <li class="user-name"><span>Akihiko Avaron</span></li> -->
                         <li class="dropdown avatar-dropdown">
                             <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" />
@@ -79,6 +82,7 @@
                         </li>
                     </ul>
                 </div>
+
 
                 <div class="col-md-1">
                     <img src="connectsea\keranjang-belanja-header.png" width="40px" height="40px" class="keranjang-belanja-header">
@@ -126,11 +130,11 @@
                             <span class="fa fa-tags" aria-hidden="true"></span> Offer and Promo <span
                                 class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li><a class=" nav-header"><span
+                    <li><a href="/privacypolicy" class=" nav-header"><span
                                 class="fa fa-sticky-note-o"></span>
                             Privacy Policy <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
-                    <li><a class=" nav-header"><span class="fa fa-shield"></span>
+                    <li><a href="help" class=" nav-header"><span class="fa fa-shield"></span>
                             Help <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
                     <li><a class="nav-header"><span class="fas fa-archive"></span>
@@ -182,24 +186,18 @@
                                 <script src="asset/js/main.js"></script>
                                 <script type="text/javascript">
                                     (function(jQuery) {
-
                                         // start: Chart =============
-
                                         Chart.defaults.global.pointHitDetectionRadius = 1;
                                         Chart.defaults.global.customTooltips = function(tooltip) {
-
                                             var tooltipEl = $('#chartjs-tooltip');
-
                                             if (!tooltip) {
                                                 tooltipEl.css({
                                                     opacity: 0
                                                 });
                                                 return;
                                             }
-
                                             tooltipEl.removeClass('above below');
                                             tooltipEl.addClass(tooltip.yAlign);
-
                                             var innerHtml = '';
                                             if (undefined !== tooltip.labels && tooltip.labels.length) {
                                                 for (var i = tooltip.labels.length - 1; i >= 0; i--) {
@@ -213,7 +211,6 @@
                                                 }
                                                 tooltipEl.html(innerHtml);
                                             }
-
                                             tooltipEl.css({
                                                 opacity: 1,
                                                 left: tooltip.chart.canvas.offsetLeft + tooltip.x + 'px',
@@ -248,7 +245,6 @@
                                                 data: [4, 7, 5, 7, 4.5, 4, 5, 4.5, 6, 5.6, 7.5]
                                             }]
                                         };
-
                                         var doughnutData = [{
                                                 value: 300,
                                                 color: "#129352",
@@ -279,10 +275,7 @@
                                                 highlight: "#15BA67",
                                                 label: "X"
                                             }
-
                                         ];
-
-
                                         var doughnutData2 = [{
                                                 value: 100,
                                                 color: "#129352",
@@ -313,9 +306,7 @@
                                                 highlight: "#15BA67",
                                                 label: "X"
                                             }
-
                                         ];
-
                                         var barChartData = {
                                             labels: ["January", "February", "March", "April", "May", "June", "July"],
                                             datasets: [{
@@ -336,14 +327,12 @@
                                                 }
                                             ]
                                         };
-
                                         window.onload = function() {
                                             var ctx = $(".doughnut-chart")[0].getContext("2d");
                                             window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
                                                 responsive: true,
                                                 showTooltips: true
                                             });
-
                                             var ctx2 = $(".line-chart")[0].getContext("2d");
                                             window.myLine = new Chart(ctx2).Line(lineChartData, {
                                                 responsive: true,
@@ -351,23 +340,18 @@
                                                 multiTooltipTemplate: "<%= value %>",
                                                 maintainAspectRatio: false
                                             });
-
                                             var ctx3 = $(".bar-chart")[0].getContext("2d");
                                             window.myLine = new Chart(ctx3).Bar(barChartData, {
                                                 responsive: true,
                                                 showTooltips: true
                                             });
-
                                             var ctx4 = $(".doughnut-chart2")[0].getContext("2d");
                                             window.myDoughnut2 = new Chart(ctx4).Doughnut(doughnutData2, {
                                                 responsive: true,
                                                 showTooltips: true
                                             });
-
                                         };
-
                                         //  end:  Chart =============
-
                                         // start: Calendar =========
                                         $('.dashboard .calendar').fullCalendar({
                                             header: {
@@ -398,7 +382,6 @@
                                                     title: 'Party',
                                                     start: '2015-02-29T20:00:00'
                                                 },
-
                                                 // areas where "Meeting" must be dropped
                                                 {
                                                     id: 'availableForMeeting',
@@ -412,7 +395,6 @@
                                                     end: '2015-02-13T16:00:00',
                                                     rendering: 'background'
                                                 },
-
                                                 // red areas where no events can be dropped
                                                 {
                                                     start: '2015-02-24',
@@ -431,9 +413,7 @@
                                             ]
                                         });
                                         // end : Calendar==========
-
                                         // start: Maps============
-
                                         jQuery('.maps').vectorMap({
                                             map: 'world_en',
                                             backgroundColor: null,
@@ -446,9 +426,7 @@
                                             scaleColors: ['#C8EEFF', '#006491'],
                                             normalizeFunction: 'polynomial'
                                         });
-
                                         // end: Maps==============
-
                                     })(jQuery);
                                 </script>
                                 <!-- end: Javascript -->

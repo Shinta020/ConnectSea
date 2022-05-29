@@ -25,6 +25,7 @@
         body {
             background-color: rgb(88, 143, 243);
         }
+      
 
     </style>
 
