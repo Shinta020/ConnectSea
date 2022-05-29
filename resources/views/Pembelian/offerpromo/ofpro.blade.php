@@ -56,6 +56,42 @@
     </div>
     </div>
     <br>
+
+    <div>
+    <div class="col-4"></div>
+    <div class="col-4 bcgrnd">
+        <center><h2 class="ofpro-font">Promo and Voucher</h2></center>
+    </div>
+    <div class="col-4"></div>
+    </div>
+	<br/>
+
+	<table border="1" class="table table-primary mt-3">
+
+		<tr class="font-voucher">
+            <th class="text-center">No</th>
+            <th class="text-center">Kode Voucher</th>
+			<th class="text-center">Jenis Vocher</th>
+			<th class="text-center">Masa Berlaku</th>
+			<th class="text-center">Voucher</th>
+            <th class="text-center">Detail Voucher</th>
+		</tr>
+
+		@foreach($voucher as $p)
+
+		<tr class="font-voucher">
+			<td class="text-center">{{ $loop->iteration }}</td>
+            <td class="text-center">{{ $p->kodevoucher }}</td>
+			<td class="text-center">{{ $p->desc }}</td>
+			<td class="text-center">{{ $p->masaberlaku }}</td>
+			<td class="text-center">{{ $p->imgvoucher }}</td>
+            <td class="text-center">
+                <a href="/Pembelian/offerpromo/detail/{{ $p->kodevoucher }}" class="btn btn-info">View Detail</a>
+            </td>
+		</tr>
+		@endforeach
+	</table>
+
     <div>
         <div class="col-4"></div>
         <div class="col-4 bcgrnd">
@@ -84,45 +120,7 @@
             <a href="#" class="next">&#8250;</a>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
-    <div>
-        <div>
-            <div class="col-4"></div>
-            <div class="col-4 bcgrnd">
-                <center><h2 class="ofpro-font">Voucher dan Gratis Ongkir</h2></center>
-            </div>
-            <div class="col-4"></div>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <div class="col-sm-6">
-                        <ul>
-                        <li>
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
-                        <button height="75" width="75"></i>> <p id="demo">Klaim</p> </button> </li></ul>
-                        <script>
-                            document.getElementById("demo").onclick = function() {myFunction()};
-
-                            function myFunction() {
-                                document.getElementById("demo").innerHTML = "Diklaim";
-                            }
-                        </script>
-                    </div>
-                    <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
-                    </div>
-                </li>
-                <li>
-                    <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
-                    </div>
-                    <div class="col-sm-6">
-                        <img src="connectsea\voucher1.png" alt="diskon1" width="375" height="75">
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <br>
     </div>
 </div>
 
