@@ -1,5 +1,6 @@
 @extends('layout.template')
 @section('content')
+
     <div class="container">
         <form class="form-horizontal" action="/produk/store" method="post">
             {{ csrf_field() }}
