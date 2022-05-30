@@ -14,7 +14,8 @@ class CreatePromoAndVoucherTable extends Migration
     public function up()
     {
         Schema::create('promo_and_voucher', function (Blueprint $table) {
-            $table->Increments('kodevoucher');
+            $table->Increments('id');
+            $table->string('kodevoucher');
             $table->string('desc');
             $table->dateTime('masaberlaku');
             $table->string('imgvoucher');

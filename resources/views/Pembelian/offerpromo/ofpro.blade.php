@@ -70,9 +70,6 @@
 
 		<tr class="font-voucher">
             <th class="text-center">No</th>
-            <th class="text-center">Kode Voucher</th>
-			<th class="text-center">Jenis Vocher</th>
-			<th class="text-center">Masa Berlaku</th>
 			<th class="text-center">Voucher</th>
             <th class="text-center">Detail Voucher</th>
 		</tr>
@@ -81,12 +78,9 @@
 
 		<tr class="font-voucher">
 			<td class="text-center">{{ $loop->iteration }}</td>
-            <td class="text-center">{{ $p->kodevoucher }}</td>
-			<td class="text-center">{{ $p->desc }}</td>
-			<td class="text-center">{{ $p->masaberlaku }}</td>
 			<td class="text-center">{{ $p->imgvoucher }}</td>
             <td class="text-center">
-                <a href="/Pembelian/offerpromo/detail/{{ $p->kodevoucher }}" class="btn btn-info">View Detail</a>
+                <a href="/ofpro2/detail/{{ $p->id }}" class="btn btn-info">View Detail</a>
             </td>
 		</tr>
 		@endforeach

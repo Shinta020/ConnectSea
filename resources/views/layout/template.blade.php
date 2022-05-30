@@ -71,10 +71,7 @@
 
                 <div class="col-md-2">
                     <ul class="nav navbar-nav navbar-right user-nav">
-                        <li class="user-name"><span>
-                                {{ Auth::user()->name }} </span>
-                        </li>
-                        <!-- <li class="user-name"><span>Akihiko Avaron</span></li> -->
+                        <li class="user-name"><span>Akihiko Avaron</span></li>
                         <li class="dropdown avatar-dropdown">
                             <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" />

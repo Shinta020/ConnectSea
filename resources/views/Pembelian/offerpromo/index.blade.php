@@ -32,7 +32,9 @@
 			<td>{{ $p->masaberlaku }}</td>
 			<td>{{ $p->imgvoucher }}</td>
             <td>
-                <a href="/Pembelian/offerpromo/detail/{{ $p->kodevoucher }}" class="btn btn-info">View Detail</a>
+                <a href="/ofpro2/detail/{{ $p->id }}" class="btn btn-info">View Detail</a>
+                <a href="/ofpro2/edit/{{ $p->id }}" class="btn btn-warning">Edit</a>
+				<a href="/ofpro2/hapus/{{ $p->id }}" class="btn btn-danger">Hapus</a>
             </td>
 		</tr>
 		@endforeach

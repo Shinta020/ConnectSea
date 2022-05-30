@@ -20,7 +20,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/ofpro', function () {
-    return view('Pembelian.ofpro');
+    return view('Pembelian.offerpromo.ofpro');
 });
 Route::get('/ikan', function () {
     return view('Pembelian.ikan');
@@ -76,5 +76,7 @@ Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');
 Route::get('/ofpro2', 'Pembelian\OfferandPromo@index');
 Route::get('/ofpro2/tambah','Pembelian\OfferandPromo@tambah');
 Route::post('/ofpro2/store','Pembelian\OfferandPromo@store');
-
-
+Route::get('/ofpro2/detail/{id}','Pembelian\OfferandPromo@view');
+Route::get('/ofpro2/hapus/{id}','Pembelian\OfferandPromo@hapus');
+Route::get('/ofpro2/edit/{id}','Pembelian\OfferandPromo@edit');
+Route::post('/ofpro2/update','Pembelian\OfferandPromo@update');
