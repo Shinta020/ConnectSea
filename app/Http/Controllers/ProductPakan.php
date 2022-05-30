@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductIkan extends Controller
+class ProductPakan extends Controller
 {
-    public function ikan(){
-		return view('Pembelian.pakanikan');
+    public function pakan(){
+		return view('Pembelian.pakan');
 	}
 }

@@ -97,12 +97,12 @@
                     </a>
                 </div>
                 <br>
-                <div class="row-sm-5"><a href="#">
+                <div class="row-sm-5"><a href="/pakan">
                         <div class="box1"><span id="kategori">Pakan</span></div>
                     </a>
                 </div>
                 <br>
-                <div class="row-sm-5"><a href="#">
+                <div class="row-sm-5"><a href="/bibit">
                         <div class="box1"><span id="kategori">Bibit</span></div>
                     </a>
                 </div>

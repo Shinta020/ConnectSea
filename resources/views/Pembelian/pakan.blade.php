@@ -1,6 +1,6 @@
 @extends('layout.template')
 
-@section('title', 'product pakan ikan')
+@section('title', 'product pakan')
 
 @section('content')
 

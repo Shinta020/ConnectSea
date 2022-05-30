@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductIkan extends Controller
+class ProductBibit extends Controller
 {
-    public function ikan(){
+    public function bibit(){
 		return view('Pembelian.bibit');
 	}
 }

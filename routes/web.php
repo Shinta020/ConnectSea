@@ -24,6 +24,15 @@ Route::get('/ofpro', function () {
 });
 Route::get('/ikan', function () {
     return view('Pembelian.ikan');
+
+});
+Route::get('/pakan', function () {
+    return view('Pembelian.pakan');
+
+});
+Route::get('/bibit', function () {
+    return view('Pembelian.bibit');
+
 });
 Route::get('/privacypolicy', function () {
     return view('dataakun.privacypolicy');
@@ -47,7 +56,7 @@ Route::get('/profile/delete/{id}','ProfileController@delete');
 //by Septica Tiara Indah Permatasari
 Route::get('/ikan', 'ProductIkan@ikan');
 Route::get('/bibit', 'ProductBibit@bibit');
-Route::get('/pakanikan', 'ProductPakan@pakanikan');
+Route::get('/pakan', 'ProductPakan@pakan');
 
 Route::get('/produk','Pembelian\UlasanProduk@displayProduk');
 
