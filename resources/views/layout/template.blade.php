@@ -154,7 +154,8 @@
                         <!-- start: content -->
                         <div id="content">
 
-                                @yield("content")
+                                @section('content')
+                                @show
 
                         </div>
                         <!-- end: content -->

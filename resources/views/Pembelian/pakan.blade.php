@@ -4,52 +4,52 @@
 
 @section('content')
 
-    <!--BARIS PERTAMA IKAN-->
+    <!--BARIS PERTAMA PELET-->
     <div class="container text-center justify-content-center" style="margin-top: 50px">
         <div class="row text-center pertama">
     </div> <br>
-    <!--KAKAP MERAH-->
+    <!--PELET 58 SUPER-->
     <div class="container">
     <div class="col-sm-2">
-        <img src="connectsea\kakapmerah.jpg" alt="ikan1" width="150" height="150">
-            <a href="/getdetailproduk/1">Kakap Merah</a> <br> Rp 70.000/KG
+        <img src="connectsea\peletsuper.jpg" alt="ikan1" width="150" height="150">
+            <a href="/getdetailproduk/1">Pelet 58 Super</a> <br> Rp 10.000/KG
     </div>
-    <!--TUNA-->
+    <!--PELET SANGRAI UMPAN BALAP-->
     <div class="col-sm-2">
-        <img src="connectsea\tuna.jpg" alt="ikan2" width="150" height="150" >
-            <a href="/getdetailproduk/1">Tuna</a> <br> Rp 50.000/KG
+        <img src="connectsea\peletsangrai.jpg" alt="ikan2" width="150" height="150" >
+            <a href="/getdetailproduk/1">Pelet Sangrai</a> <br> Rp 25.000/KG
     </div>
-    <!--TONGKOL-->
+    <!--PELET SINTA SANGRAI-->
     <div class="col-sm-2">
-        <img src="connectsea\tongkol.jpg" alt="" width="150" height="150">
-            <a href="/getdetailproduk/1">Tongkol</a> <br> Rp 20.000/KG
+        <img src="connectsea\peletsinta.jpg" alt="" width="150" height="150">
+            <a href="/getdetailproduk/1">Pelet Sinta Sangrai</a> <br> Rp 10.000/KG
     </div>
-     <!--KERAPU-->
+     <!--BANDUL GALATAMA-->
      <div class="col-sm-2">
-        <img src="connectsea\kerapu.jpg" alt="" width="150" height="150">
-            <a href="/getdetailproduk/1">Kerapu</a> <br> Rp 35.000/KG
+        <img src="connectsea\bandulgalatama.jpg" alt="" width="150" height="150">
+            <a href="/getdetailproduk/1">Bandul Galatama</a> <br> Rp 20.000/KG
     </div>
-    <!--BANDENG-->
+    <!--TAKARI-->
     <div class="col-sm-2">
-        <img src="connectsea\bandeng.jpg" alt="" width="150" height="150">
-            <a href="/getdetailproduk/1">Bandeng</a> <br> Rp 15.000/KG
+        <img src="connectsea\takari.jpg" alt="" width="150" height="150">
+            <a href="/getdetailproduk/1">Takari</a> <br> Rp 32.000/KG
     </div>
-    <!--GURAME-->
+    <!--PELET KOI -->
     <div class="col-sm-2">
-        <img src="connectsea\gurame.jpg" alt="" width="150" height="150" >
-            <a href="/getdetailproduk/1">Gurame</a> <br> Rp 50.000/KG
+        <img src="connectsea\peletkoi.jpg" alt="" width="150" height="150" >
+            <a href="/getdetailproduk/1">Pelet Koi </a> <br> Rp 25.000/KG
     </div>
 
-    <!--BARIS KEDUA UDANG-->
-        <!--UDANG COKELAT-->
+    <!--BARIS KEDUA MASH-->
+        <!--MAS BANDUL-->
         <div class="col-sm-2">
-                  <img src="connectsea\udangcokelat.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Udang Cokelat</a> <br> Rp 30.000/KG
+            <img src="connectsea\masbandul.jpg" alt="" width="150" height="150" >
+                <a href="/getdetailproduk/1">Mas Bandul</a> <br> Rp 30.000/KG
         </div>
-        <!--UDANG DOGOL-->
+        <!--TetraBits Complete-->
         <div class="col-sm-2">
-                <img src="connectsea\udangdogol.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Udang Dogol</a> <br> Rp 25.000/KG
+                <img src="connectsea\tetrabits.jpg" alt="" width="150" height="150">
+                        <a href="/getdetailproduk/1">Tetrabits Complete</a> <br> Rp 25.000/KG
         </div>
           <!--UDANG FLOWER-->
         <div class="col-sm-2">
