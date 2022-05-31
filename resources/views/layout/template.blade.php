@@ -22,15 +22,17 @@
     <link rel="stylesheet" href="{{ asset('asset/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/plugins/jquery.steps.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/jquery.ui.min.css') }}">
-    <link rel="stylesheet" href="{{ url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
 
 
     <!-- end: Css -->
 
     <!-- script icon-->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src=" {{ url ('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js') }}"></script>
+    <script src=" {{ url ('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js') }}"></script>
+
+
 
     <!-- icon Start Selling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -167,27 +169,24 @@
             <!-- end: content -->
 
             <!-- start: Javascript -->
-            <script src="asset/js/jquery.min.js"></script>
-            <script src="asset/js/jquery.ui.min.js"></script>
-            <script src="asset/js/bootstrap.min.js"></script>
-            <!-- start: Javascript -->
-            <script src="asset/js/jquery.min.js"></script>
-            <script src="asset/js/jquery.ui.min.js"></script>
-            <script src="asset/js/bootstrap.min.js"></script>
+            <script src=" {{ asset('asset/js/jquery.min.js') }}"></script>
+            <script src=" {{ asset('asset/js/bootstrap.min.js') }}"></script>
+            <script src=" {{ asset('asset/js/jquery.ui.min.js') }}"></script>
+            <script src=" {{ asset('asset/js/main.js') }}"></script>
 
 
             <!-- plugins -->
-            <script src="asset/js/plugins/moment.min.js"></script>
-            <script src="asset/js/plugins/fullcalendar.min.js"></script>
-            <script src="asset/js/plugins/jquery.nicescroll.js"></script>
-            <script src="asset/js/plugins/jquery.vmap.min.js"></script>
-            <script src="asset/js/plugins/maps/jquery.vmap.world.js"></script>
-            <script src="asset/js/plugins/jquery.vmap.sampledata.js"></script>
-            <script src="asset/js/plugins/chart.min.js"></script>
+            <script src=" {{ asset('asset/js/plugins/moment.min.js') }}"></script>
+            <script src=" {{ asset('asset/js/plugins/fullcalendar.min.js') }}"></script>
+            <script src=" {{ asset('asset/js/plugins/jquery.nicescroll.js') }}"></script>
+            <script src=" {{ asset('asset/js/plugins/jquery.vmap.min.js') }}"></script>
+            <script src=" {{ asset('asset/js/plugins/maps/jquery.vmap.world.js') }}"></script>
+            <script src=" {{ asset('asset/js/plugins/jquery.vmap.sampledata.js') }}"></script>
+            <script src=" {{ asset('asset/js/plugins/chart.min.js') }}"></script>
 
 
             <!-- custom -->
-            <script src="asset/js/main.js"></script>
+            <script src="{{ asset('asset/js/main.js') }}"></script>
             <script type="text/javascript">
                 (function(jQuery) {
                     // start: Chart =============
