@@ -58,7 +58,7 @@
             <label class="col-3" for="imgproduk">Select a Picture</label>
             <div class="col-1">:</div>
             <div class="col-8">
-                {{ $p->imgproduk }}
+                <img src="connectsea/{{ $p->imgproduk }}">
             </div>
         </div>
         @endforeach

@@ -78,7 +78,7 @@
 
 		<tr class="font-voucher">
 			<td class="text-center">{{ $loop->iteration }}</td>
-			<td class="text-center">{{ $p->imgvoucher }}</td>
+			<td class="text-center"><img src="connectsea/{{ $p->imgvoucher }}"></td>
             <td class="text-center">
                 <a href="/ofpro2/detail/{{ $p->id }}" class="btn btn-info">View Detail</a>
             </td>

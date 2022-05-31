@@ -56,7 +56,7 @@
                                 </button>
                             </div>
                         </div>
-                        <input type="hidden" name="token" value="{{ $request->route('token') }}">
+                        {{-- <input type="hidden" name="token" value="{{ $request->route('token') }}"> --}}
                     </form>
                 </div>
             </div>

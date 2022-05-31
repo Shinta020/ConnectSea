@@ -54,7 +54,11 @@ class RegisterController extends Controller
             'notelp' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+<<<<<<< Updated upstream
         //    'image' => ['string', 'max:255'],
+=======
+            //'image' => ['string', 'max:255'],
+>>>>>>> Stashed changes
         ]);
     }
 
@@ -72,7 +76,11 @@ class RegisterController extends Controller
             'notelp' => $data['notelp'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+<<<<<<< Updated upstream
          //   'image' => $data['image'],
+=======
+            //'image' => $data['image'],
+>>>>>>> Stashed changes
         ]);
     }
 }
