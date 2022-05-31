@@ -5,49 +5,54 @@
     <script>
         $(document).ready(function() {
             $("#flip1").click(function() {
-                $("#panel1").slideUp("fast");
+                $("#panel1").slideToggle("milimeter");
             });
         });
-
         $(document).ready(function() {
             $("#flip2").click(function() {
-                $("#panel2").slideDown("slow");
+                $("#panel2").slideToggle("milimeter");
             });
         });
-
         $(document).ready(function() {
             $("#flip3").click(function() {
                 $("#panel3").slideToggle("milimeter");
             });
         });
+        $(document).ready(function() {
+            $("#flip4").click(function() {
+                $("#panel4").slideToggle("milimeter");
+            });
+        });
+        $(document).ready(function() {
+            $("#flip5").click(function() {
+                $("#panel5").slideToggle("milimeter");
+            });
+        });
     </script>
     <style>
-        h1,
-        h2,
-        h3 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
 
-        #flip3 {
+        #flip1, #flip2, #flip3, #flip4, #flip5 {
             padding: 2px;
             text-align: center;
-            background-color: peachpuff;
-            border: solid 3px burlywood;
+            background-color: rgb(196, 194, 192);
+            border: solid 3px rgb(83, 83, 82);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 25px;
             border-radius: 10px;
+            color :black
         }
 
-        #panel3 {
+        #panel1, #panel2, #panel3, #panel4, #panel5 {
             padding: 2px;
             text-align: justify;
-            background-color: cornsilk;
-            border: solid 1px burlywood;
+            background-color: rgb(255, 255, 255) ;
+            border: solid 1px rgb(83, 83, 82);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 16px;
             padding: 10px;
             display: none;
             border-radius: 10px;
+            color :black;
         }
 
         #arrow {
@@ -58,10 +63,10 @@
 
     <div class="container header-left background-all">
         <br>
-        <div id="flip3"><i>Apa itu Website ConnectSea?</i>
-            <span id="arrow" style='font-size:25px;'>&#8897;</span>
+        <div id="flip1"><i>Apa itu Website ConnectSea?</i>
+            {{-- <span id="arrow" style='font-size:25px;'>&#8897;</span> --}}
         </div>
-        <div class="col" id="panel3">
+        <div class="col" id="panel1">
             Website ConnectSea adalah sebuah sistem perangkat lunak pada perangkat PC/laptop yang berfungsi untuk
             menghubungkan
             nelayan, pembudidaya hasil laut, dan pengepul hasil tangkap laut dengan pelanggan (pemilik restoran,
@@ -72,6 +77,45 @@
             meningkatkan
             taraf ekonomi nelayan, pembudidaya hasil laut, dan pengepul hasil tangkapan laut di masa pandemi.
         </div>
+        <br>
+        <div id="flip2"><i>Bagaimana cara menggunakan ConnectSea?</i>
+            {{-- <span id="arrow" style='font-size:25px;'>&#8897;</span> --}}
+        </div>
+        <div class="col" id="panel2">
+            <p>Berikut merupakan alur untuk bisa menggunakan fitur pada ConnectSea.</p>
+            <li>Pengguna melakukan Login/Register</li>
+            <li>Pengguna mencari produk yang ingin dibeli</li>
+            <li>Pengguna dapat menambahkan produk tersebut ke keranjang belanja</li>
+            <li>Pengguna melakukan checkout dan pembayaran</li>
+        </div>
+        <br>
+        <div id="flip3"><i>Fitur apa saja yang ada di Website ConnectSea?</i>
+            {{-- <span id="arrow" style='font-size:25px;'>&#8897;</span> --}}
+        </div>
+        <div class="col" id="panel3">
+            <p>Berikut berbagai fitur pada ConnectSea.</p>
+            <li>Chat</li>
+            <li>Jual/beli</li>
+            <li>Checkout</li>
+        </div>
+        <br>
+        <div id="flip4"><i>Bagaimana cara melihat history orders?</i>
+            {{-- <span id="arrow" style='font-size:25px;'>&#8897;</span> --}}
+        </div>
+        <div class="col" id="panel4">
+            <li>Pengguna bisa membuka menu Profile</li>
+            <li>Kemudian, mengklik submenu History Orders</li>
+        </div>
+        <br>
+        <div id="flip5"><i>Bagaimana cara mengubah alamat pengiriman?</i>
+            {{-- <span id="arrow" style='font-size:25px;'>&#8897;</span> --}}
+        </div>
+        <div class="col" id="panel5">
+            <p>Berikut berbagai fitur pada ConnectSea.</p>
+            <li>Chat</li>
+            <li>Jual/beli</li>
+            <li>Checkout</li>
+        </div>
     </div>
-    </div>
+
 @endsection

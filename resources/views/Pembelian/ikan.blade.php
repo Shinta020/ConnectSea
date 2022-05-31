@@ -5,8 +5,14 @@
 @section('content')
 
     <!--BARIS PERTAMA IKAN-->
-    <div class="container text-center justify-content-center" style="margin-top: 50px">
+   <div class="container text-center justify-content-center" style="margin-top: 50px">
         <div class="row text-center pertama">
+    </div> <br>
+
+    <div class="container mt-3">
+        <div class="d-grid">
+          <button type="button" class="btn btn-primary btn-block">Ikan</button>
+        </div>
     </div> <br>
     <!--KAKAP MERAH-->
     <div class="container">
@@ -41,6 +47,9 @@
     </div>
 
     <!--BARIS KEDUA UDANG-->
+        <div class="d-grid">
+          <button type="button" class="btn btn-primary btn-block">Udang</button>
+        </div> <br>
         <!--UDANG COKELAT-->
         <div class="col-sm-2">
                   <img src="connectsea\udangcokelat.jpg" alt="" width="150" height="150" >
@@ -73,6 +82,10 @@
         </div>
 
     <!--BARIS KETIGA LOBSTER-->
+        <div class="d-grid">
+          <button type="button" class="btn btn-primary btn-block">Lobster</button>
+        </div>
+        <br>
         <!--LOBSTER MUTIARA-->
         <div class="col-sm-2">
                   <img src="connectsea\lobstermutiara.jpg" alt="" width="150" height="150" >
