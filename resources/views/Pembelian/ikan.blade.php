@@ -1,108 +1,140 @@
 @extends('layout.template')
-
-@section('title', 'product ikan')
-
 @section('content')
 
-    <!--BARIS PERTAMA IKAN-->
-    <div class="container text-center justify-content-center" style="margin-top: 50px">
-        <div class="row text-center pertama">
-    </div> <br>
-    <!--KAKAP MERAH-->
-    <div class="container">
-    <div class="col-sm-2">
-        <img src="connectsea\kakapmerah.jpg" alt="ikan1" width="150" height="150">
-            <a href="/getdetailproduk/1">Kakap Merah</a> <br> Rp 70.000/KG
+<div class="container">
+  <!-- kategori produk -->
+  <div class="row mt-4">
+    <div class="col col-md-12 col-sm-12 mb-4">
+      <h2 class="text-center">Kategori Produk</h2>
     </div>
-    <!--TUNA-->
-    <div class="col-sm-2">
-        <img src="connectsea\tuna.jpg" alt="ikan2" width="150" height="150" >
-            <a href="/getdetailproduk/1">Tuna</a> <br> Rp 50.000/KG
+    <!-- kategori pertama -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('kategori/satu') }}">
+          <img src="{{asset('connectsea/kakapmerah.jpg') }}" alt="foto kategori" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('kategori/satu') }}" class="text-decoration-none">
+            <p class="card-text">Kategori Pertama</p>
+          </a>
+        </div>
+      </div>
     </div>
-    <!--TONGKOL-->
-    <div class="col-sm-2">
-        <img src="connectsea\tongkol.jpg" alt="" width="150" height="150">
-            <a href="/getdetailproduk/1">Tongkol</a> <br> Rp 20.000/KG
+    <!-- kategori kedua -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('kategori/dua') }}">
+          <img src="{{asset('images/slide1.jpg') }}" alt="foto kategori" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('kategori/dua') }}" class="text-decoration-none">
+            <p class="card-text">Kategori Kedua</p>
+          </a>
+        </div>
+      </div>
     </div>
-     <!--KERAPU-->
-     <div class="col-sm-2">
-        <img src="connectsea\kerapu.jpg" alt="" width="150" height="150">
-            <a href="/getdetailproduk/1">Kerapu</a> <br> Rp 35.000/KG
+    <!-- kategori ketiga -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('kategori/tiga') }}">
+          <img src="{{asset('images/slide1.jpg') }}" alt="foto kategori" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('kategori/tiga') }}" class="text-decoration-none">
+            <p class="card-text">Kategori Ketiga</p>
+          </a>
+        </div>
+      </div>
     </div>
-    <!--BANDENG-->
-    <div class="col-sm-2">
-        <img src="connectsea\bandeng.jpg" alt="" width="150" height="150">
-            <a href="/getdetailproduk/1">Bandeng</a> <br> Rp 15.000/KG
+  </div>
+  <!-- end kategori produk -->
+  <!-- produk Terbaru-->
+  <div class="row mt-4">
+    <div class="col col-md-12 col-sm-12 mb-4">
+      <h2 class="text-center">Terbaru</h2>
     </div>
-    <!--GURAME-->
-    <div class="col-sm-2">
-        <img src="connectsea\gurame.jpg" alt="" width="150" height="150" >
-            <a href="/getdetailproduk/1">Gurame</a> <br> Rp 50.000/KG
+    <!-- produk pertama -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/satu') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Pertama
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!--BARIS KEDUA UDANG-->
-        <!--UDANG COKELAT-->
-        <div class="col-sm-2">
-                  <img src="connectsea\udangcokelat.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Udang Cokelat</a> <br> Rp 30.000/KG
+    <!-- produk kedua -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/dua') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Kedua
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
         </div>
-        <!--UDANG DOGOL-->
-        <div class="col-sm-2">
-                <img src="connectsea\udangdogol.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Udang Dogol</a> <br> Rp 25.000/KG
+      </div>
+    </div>
+    <!-- produk ketiga -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/tiga') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Ketiga
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
         </div>
-          <!--UDANG FLOWER-->
-        <div class="col-sm-2">
-                  <img src="connectsea\udangflower.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Udang Flower</a> <br> Rp 10.000/KG
-        </div>
-        <!--UDANG GALAH-->
-        <div class="col-sm-2">
-                <img src="connectsea\udanggalah.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Udang Galah</a> <br> Rp 20.000/KG
-        </div>
-          <!--UDANG KARANG-->
-        <div class="col-sm-2">
-                  <img src="connectsea\udangkarang.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Udang Karang</a> <br> Rp 20.000/KG
-        </div>
-        <!--UDANG PECI-->
-        <div class="col-sm-2">
-                <img src="connectsea\udangpeci.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Udang Peci</a> <br> Rp 25.000/KG
-        </div>
-
-    <!--BARIS KETIGA LOBSTER-->
-        <!--LOBSTER MUTIARA-->
-        <div class="col-sm-2">
-                  <img src="connectsea\lobstermutiara.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Lobster Mutiara</a> <br> Rp 50.000/KG
-        </div>
-        <!--LOBSTER CRAYFISH-->
-        <div class="col-sm-2">
-                <img src="connectsea\lobstercrayfish.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Lobster Crayfish</a> <br> Rp 33.000/KG
-        </div>
-          <!--LOBSTER BAMBU-->
-        <div class="col-sm-2">
-                  <img src="connectsea\lobsterbambu.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Lobster Bambu</a> <br> Rp 30.000/KG
-        </div>
-        <!--LOBSTER PASIR-->
-        <div class="col-sm-2">
-                <img src="connectsea\lobsterpasir.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Lobster Pasir</a> <br> Rp 25.000/KG
-        </div>
-          <!--LOBSTER KIPAS-->
-        <div class="col-sm-2">
-                  <img src="connectsea\lobsterkipas.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Lobster Kipas</a> <br> Rp 30.000/KG
-        </div>
-        <!--LOBSTER PAKISTAN-->
-        <div class="col-sm-2">
-                <img src="connectsea\lobsterpakistan.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Lobster Pakistan</a> <br> Rp 25.000/KG
-        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end produk terbaru -->
 </div>
-
 @endsection
