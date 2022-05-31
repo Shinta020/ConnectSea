@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="col-md-1">
-                    <img src="connectsea\logo.png" width="50px" height="50px" class="logo-header">
+                    <img src=" {{asset('connectsea\logo.png')}}"width="50px" height="50px" class="logo-header">
                 </div>
                 <div class="col-md-0">
                     <title>@yield('title')</title>
@@ -78,7 +78,7 @@
                     <ul class="nav navbar-nav navbar-right user-nav">
                         <li class="user-name"><span>Akihiko Avaron</span></li>
                         <li class="dropdown avatar-dropdown">
-                            <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name"
+                            <img src="{{asset('asset/img/avatar.jpg')}}" class="img-circle avatar" alt="user name"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" />
                             <ul class="">
                         </li>
@@ -87,7 +87,7 @@
 
 
                 <div class="col-md-1">
-                    <img src="connectsea\keranjang-belanja-header.png" width="40px" height="40px" class="keranjang-belanja-header">
+                    <img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header">
                 </div>
 
             </div>
@@ -102,7 +102,7 @@
                 <ul class="nav nav-list">
                     <li>
                         <div>
-                            <center> <img src="connectsea\header-left.png" width="135px" height="135px"
+                            <center> <img src="{{ asset('connectsea\header-left.png')}}" width="135px" height="135px"
                                     class="header-left"> </center>
                         </div>
                     </li>

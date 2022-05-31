@@ -8,6 +8,12 @@
     <div class="container text-center justify-content-center" style="margin-top: 50px">
         <div class="row text-center pertama">
     </div> <br>
+
+    <div class="container mt-3">
+    <div class="d-grid">
+          <button type="button" class="btn btn-primary btn-block">Pelet</button>
+    </div>
+    </div> <br>
     <!--PELET 58 SUPER-->
     <div class="container">
     <div class="col-sm-2">
@@ -41,6 +47,9 @@
     </div>
 
     <!--BARIS KEDUA MASH-->
+    <div class="d-grid">
+        <button type="button" class="btn btn-primary btn-block">Mash</button>
+    </div> <br>
         <!--MAS BANDUL-->
         <div class="col-sm-2">
             <img src="connectsea\masbandul.jpg" alt="" width="150" height="150" >
@@ -73,6 +82,10 @@
         </div>
 
     <!--BARIS KETIGA LOBSTER-->
+    <div class="d-grid">
+        <button type="button" class="btn btn-primary btn-block">Crumble</button>
+    </div>
+    </div> <br>
         <!--LOBSTER MUTIARA-->
         <div class="col-sm-2">
                   <img src="connectsea\lobstermutiara.jpg" alt="" width="150" height="150" >
