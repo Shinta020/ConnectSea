@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Routing\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -80,3 +82,7 @@ Route::get('/ofpro2/detail/{id}','Pembelian\OfferandPromo@view');
 Route::get('/ofpro2/hapus/{id}','Pembelian\OfferandPromo@hapus');
 Route::get('/ofpro2/edit/{id}','Pembelian\OfferandPromo@edit');
 Route::post('/ofpro2/update','Pembelian\OfferandPromo@update');
+
+// Start Selling by Cahya
+//route CRUD
+Route::get('/startselling','StartsellingController@index');
