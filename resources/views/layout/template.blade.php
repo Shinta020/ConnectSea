@@ -98,7 +98,6 @@
 
         <div class="container-fluid mimin-wrapper">
 
-<<<<<<< Updated upstream
             <!-- start:Left Menu -->
             <div id="left-menu">
                 <div class="sub-left-menu scroll">
@@ -141,7 +140,7 @@
                         <li><a href="help" class=" nav-header"><span class="fa fa-shield"></span>
                                 Help <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                         </li>
-                        <li><a class="nav-header"><span class="glyphicon glyphicon-equalizer"></span>
+                        <li><a href="/startselling" class="nav-header"><span class="glyphicon glyphicon-equalizer"></span>
                                 Start Selling</a>
                         </li>
                         <li>

@@ -4643,3 +4643,22 @@
 .font-voucher{
     color: white;
 }
+
+/*====== Start Selling ======*/
+
+.grid-startselling{
+    color: white;
+}
+.glyphicon.glyphicon-shopping-cart{
+    font-size: 35px;
+    color:#f0f0f5;
+}
+.glyphicon.glyphicon-list-alt{
+    font-size: 35px;
+    color:#f0f0f5;
+}
+.glyphicon.glyphicon-usd{
+    font-size: 35px;
+    color:#f0f0f5;
+}
+
