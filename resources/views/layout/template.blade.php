@@ -96,6 +96,7 @@
 
         <div class="container-fluid mimin-wrapper">
 
+<<<<<<< Updated upstream
             <!-- start:Left Menu -->
             <div id="left-menu">
                 <div class="sub-left-menu scroll">
@@ -143,6 +144,57 @@
                         </li>
                         <li>
                             <a href="{{ route('logout') }}" onclick="event.preventDefault();
+=======
+        <!-- start:Left Menu -->
+        <div id="left-menu">
+            <div class="sub-left-menu scroll">
+                <ul class="nav nav-list">
+                    <li>
+                        <div>
+                            <center> <img src="connectsea\header-left.png" width="135px" height="135px"
+                                    class="header-left"> </center>
+                        </div>
+                    </li>
+                    <li><a href="home" class=" nav-header">
+                        <span class="fa fa-home" aria-hidden="true"></span> Home <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    </li>
+                    <li>
+                        <a href="/profile" class=" nav-header">
+                            <span class="fa fa-user"></span> Profile
+                            <span class="fa-angle-right fa right-arrow text-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" nav-header">
+                            <span class="fa fa-envelope" aria-hidden="true"></span> Chat
+                            <span class="fa-angle-right fa right-arrow text-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" nav-header">
+                            <span class="fa fa-history" aria-hidden="true"></span> History Orders
+                            <span class="fa-angle-right fa right-arrow text-right"></span>
+                        </a>
+                    </li>
+                    <li><a href="/ofpro" class="  nav-header">
+                            <span class="fa fa-tags" aria-hidden="true"></span> Offer and Promo <span
+                                class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    </li>
+                    <li><a href="/privacypolicy" class=" nav-header"><span
+                                class="fa fa-sticky-note-o"></span>
+                            Privacy Policy <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    </li>
+                    <li><a href="/help" class=" nav-header"><span class="fa fa-shield"></span>
+                            Help <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    </li>
+                    <li><a class="nav-header"><span class="fas fa-archive"></span>
+                            Start Selling <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+>>>>>>> Stashed changes
                                                      document.getElementById('logout-form').submit();">
                                 <span class="fa fa-check-square-o"></span> Sign Out
                                 <span class="fa-angle-right fa right-arrow text-right"></span></a>

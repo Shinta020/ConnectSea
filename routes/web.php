@@ -34,6 +34,8 @@ Route::get('/bibit', function () {
     return view('Pembelian.bibit');
 
 });
+
+//by Nur Nindya Risnina
 Route::get('/privacypolicy', function () {
     return view('dataakun.privacypolicy');
 });
@@ -41,9 +43,7 @@ Route::get('/help', function () {
     return view('dataakun.help');
 });
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/logout', 'LoginController@logout');
 
 //by Belva Rizki Mufidah
