@@ -25,7 +25,7 @@ class OfferandPromo extends Controller
     	return view('Pembelian.offerpromo.index',['voucher' => $voucher]);
 
     }
-        // method untuk menampilkan view form tambah voucher
+    // method untuk menampilkan view form tambah voucher
     public function tambah()
     {
         // memanggil view tambah

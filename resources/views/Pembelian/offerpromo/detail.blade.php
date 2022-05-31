@@ -1,8 +1,10 @@
 @extends('layout.template')
 
+@section('title', 'offer and promo')
+
 @section('content')
 
-<div class="container">
+<div class="container header-left background-all">
 	<h3 class="text-center">Detail Voucher</h3>
 
 	<a href="/ofpro2" class="btn btn-secondary"> Kembali</a>
