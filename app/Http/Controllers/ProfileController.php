@@ -23,7 +23,7 @@ class ProfileController extends Controller
     	$users = DB::table('users')->get();
 
     	// mengirim data user ke view profile
-    	return view('profile',['users' => $users]);
+    	return view('dataakun.profile',['users' => $users]);
 
     }
 
@@ -33,7 +33,7 @@ class ProfileController extends Controller
 	    // mengambil data user berdasarkan id yang dipilih
 	    $users = DB::table('users')->where('id',$id)->get();
 	    // passing data user yang didapat ke view edit.blade.php
-	    return view('editprofile',['users' => $users]);
+	    return view('dataakun.editprofile',['users' => $users]);
 
     }
 

@@ -123,7 +123,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class=" nav-header">
+                        <a href="/historyorder" class=" nav-header">
                             <span class="fa fa-history" aria-hidden="true"></span> History Orders
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>
