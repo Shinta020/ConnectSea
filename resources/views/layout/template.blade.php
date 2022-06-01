@@ -106,7 +106,7 @@
                                     class="header-left"> </center>
                         </div>
                     </li>
-                    <li><a href="home" class=" nav-header">
+                    <li><a href="/home" class=" nav-header">
                         <span class="fa fa-home" aria-hidden="true"></span> Home <span
                             class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
