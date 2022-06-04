@@ -14,7 +14,7 @@
 		@foreach($produk as $p)
 		<tr style="text-align: center">
             <td>
-                <img src="connectsea/{{ $p->fotoproduk }}">
+                <img src="connectsea/{{ $p->imgproduk }}" width="60px" height="60px">
             </td>
 			<td>
                 <h6> {{ $p->namaproduk }} </h6> <br/>

@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="col-md-1">
-                    <img src="{{asset('connectsea\logo.png')}}" width="50px" height="50px" class="logo-header">
+                    <img src=" {{asset('connectsea\logo.png')}}"width="50px" height="50px" class="logo-header">
                 </div>
                 <div class="col-md-0">
                     <title>@yield('title')</title>
@@ -76,12 +76,9 @@
 
                 <div class="col-md-2">
                     <ul class="nav navbar-nav navbar-right user-nav">
-                        <li class="user-name"><span>
-                                {{ Auth::user()->name }} </span>
-                        </li>
-                        <!-- <li class="user-name"><span>Akihiko Avaron</span></li> -->
+                        <li class="user-name"><span>Akihiko Avaron</span></li>
                         <li class="dropdown avatar-dropdown">
-                            <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name"
+                            <img src="{{asset('asset/img/avatar.jpg')}}" class="img-circle avatar" alt="user name"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" />
                             <ul class="">
                         </li>
@@ -89,9 +86,8 @@
                 </div>
 
 
-
                 <div class="col-md-1">
-                    <a href="/keranjangbelanja"><img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header"></a>
+                    <img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header">
                 </div>
 
             </div>
@@ -104,7 +100,6 @@
         <div id="left-menu">
             <div class="sub-left-menu scroll">
                 <ul class="nav nav-list">
-                    <br/>
                     <li>
                         <div>
                             <center> <img src="{{ asset('connectsea\header-left.png')}}" width="135px" height="135px"
@@ -128,7 +123,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/historyorder" class=" nav-header">
+                        <a class=" nav-header">
                             <span class="fa fa-history" aria-hidden="true"></span> History Orders
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>

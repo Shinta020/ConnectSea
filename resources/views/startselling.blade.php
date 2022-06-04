@@ -4,7 +4,9 @@
     <div class="container">
 
         <!-- Nama Toko -->
-        <h2 style="color: #004080"> Nama Toko </h2>
+        <h2 style="color: #004080">
+            {{ $users->name }};
+        </h2>
         <!--
         <div class="row">
             <div class="col-11">
