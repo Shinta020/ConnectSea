@@ -1,14 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+//namespace App\Http\Controllers;
+
+//use Illuminate\Http\Request;
+//use Illuminate\Support\Facades\DB;
+
+namespace App\Http\Controllers\Pembelian;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
 
 class KeranjangBelanja extends Controller
 {
-    public function cart()
+    public function index()
     {
     	// mengambil data dari table keranjang belanja
     	$keranjang_belanja = DB::table('keranjang_belanja')->get();

@@ -69,7 +69,7 @@ Route::post('/produk/store','ProdukController@store');
 
 
 //route keranjang belanja
-Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@cart');
+Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@index');
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');

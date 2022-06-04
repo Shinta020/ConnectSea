@@ -1,66 +1,13 @@
 @extends('layout.template')
 
 @section('content')
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#flip1").click(function() {
-                $("#panel1").slideToggle("milimeter");
-            });
-        });
-        $(document).ready(function() {
-            $("#flip2").click(function() {
-                $("#panel2").slideToggle("milimeter");
-            });
-        });
-        $(document).ready(function() {
-            $("#flip3").click(function() {
-                $("#panel3").slideToggle("milimeter");
-            });
-        });
-        $(document).ready(function() {
-            $("#flip4").click(function() {
-                $("#panel4").slideToggle("milimeter");
-            });
-        });
-        $(document).ready(function() {
-            $("#flip5").click(function() {
-                $("#panel5").slideToggle("milimeter");
-            });
-        });
-    </script>
-    <style>
-
-        #flip1, #flip2, #flip3, #flip4, #flip5 {
-            padding: 2px;
-            text-align: center;
-            background-color: rgb(196, 194, 192);
-            border: solid 3px rgb(83, 83, 82);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 25px;
-            border-radius: 10px;
-            color :black
-        }
-
-        #panel1, #panel2, #panel3, #panel4, #panel5 {
-            padding: 2px;
-            text-align: justify;
-            background-color: rgb(255, 255, 255) ;
-            border: solid 1px rgb(83, 83, 82);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 16px;
-            padding: 10px;
-            display: none;
-            border-radius: 10px;
-            color :black;
-        }
-
-        #arrow {
-            text-align: right
-        }
+<style>
+    .btn {
+        font-family:Lora;
+        font-size:18px;
+    }
 
     </style>
-
     <div class="container header-left background-all">
         <br>
         <div id="flip1"><i>Apa itu Website ConnectSea?</i>
@@ -116,6 +63,11 @@
             <li>Jual/beli</li>
             <li>Checkout</li>
         </div>
+        <br>
+        <div class="button text-right">
+            <a href="https://wa.me/6285806951149" class="btn btn-primary text-right">Hubungi Admin</a>
+        </div>
+        <br>
     </div>
 
 @endsection
