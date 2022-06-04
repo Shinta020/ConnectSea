@@ -10,6 +10,52 @@
 	<br/>
 	<br/>
 
+    <table class="table table-info table-bordered" border="1">
+		@foreach($produk as $p)
+		<tr style="text-align: center">
+            <td>
+                <img src="connectsea/{{ $p->fotoproduk }}">
+            </td>
+			<td>
+                <h6> {{ $p->namaproduk }} </h6> <br/>
+                <div class="row">
+                    <div class="col-2">
+                        Kategori Produk :
+                    </div>
+                    <div class="col-10">
+                        {{ $p->kategoriproduk }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        Harga :
+                    </div>
+                    <div class="col-10">
+                        {{ $p->harga }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        Berat
+                    </div>
+                    <div class="col-10">
+                        {{ $p->beratproduk }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        Deskripsi
+                    </div>
+                    <div class="col-10">
+                        {{ $p->descproduk }}
+                    </div>
+                </div>
+            </td>
+		</tr>
+		@endforeach
+	</table>
+
+    <!--
 	<div class="container-fluid">
         @foreach($produk as $p)
 
@@ -63,6 +109,7 @@
         </div>
         @endforeach
     </div>
+    -->
 
 </div>
 

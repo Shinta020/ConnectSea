@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="col-md-1">
-                    <img src=" {{asset('connectsea\logo.png')}}"width="50px" height="50px" class="logo-header">
+                    <img src="{{asset('connectsea\logo.png')}}" width="50px" height="50px" class="logo-header">
                 </div>
                 <div class="col-md-0">
                     <title>@yield('title')</title>
@@ -100,6 +100,7 @@
         <div id="left-menu">
             <div class="sub-left-menu scroll">
                 <ul class="nav nav-list">
+                    <br/>
                     <li>
                         <div>
                             <center> <img src="{{ asset('connectsea\header-left.png')}}" width="135px" height="135px"

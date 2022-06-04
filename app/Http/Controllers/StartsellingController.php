@@ -11,10 +11,9 @@ class StartsellingController extends Controller
     public function index()
     {
     	// mengambil data dari table toko
-    	$toko = DB::table('toko')->get();
+    	$users = DB::table('users')->get();
 
     	// mengirim data toko ke view index
-    	return view('startselling.index',['toko' => $toko]);
-
+    	return view('startselling',['users' => $users]);
     }
 }

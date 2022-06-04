@@ -3,7 +3,7 @@
 
     <div class="container">
         <br/>
-        <form class="form-horizontal" action="/produk/store" method="post">
+        <form class="form-horizontal" action="/produk" method="post">
             {{ csrf_field() }}
             <!--
             <div class="form-group">

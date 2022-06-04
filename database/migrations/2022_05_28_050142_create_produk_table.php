@@ -20,10 +20,14 @@ class CreateProdukTable extends Migration
             $table->integer('harga');
             $table->integer('beratproduk');
             $table->string('descproduk');
-            $table->string('file');
-            $table->integer('id');
+            $table->string('imgproduk');
             $table->timestamps();
+           // $table->string('namatokoproduk')->unsigned();
         });
+
+//        Schema::table('produk', function (Blueprint $table) {
+//            $table->foreign('namatokoproduk')->references('namatoko')->on('toko')->onDelete('cascade')->onUpdate('cascade');
+//        });
     }
 
     /**
