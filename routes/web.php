@@ -46,7 +46,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'LoginController@logout');
 
-//by Belva Rizki Mufidah
+//Belva Rizki - Profile
 Route::get('/profile', 'ProfileController@profile');
 Route::get('/profile/edit/{id}', 'ProfileController@edit');
 Route::post('/profile/update','ProfileController@update');
@@ -69,7 +69,10 @@ Route::post('/produk/store','ProdukController@store');
 
 
 //route keranjang belanja
-Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@cart');
+Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@index');
+
+//Belva Rizki - History Order
+Route::get('/historyorder','HistoryOrderController@history');
 
 // Shinta - Offer and Promo
 Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');

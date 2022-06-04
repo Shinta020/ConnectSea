@@ -76,9 +76,12 @@
 
                 <div class="col-md-2">
                     <ul class="nav navbar-nav navbar-right user-nav">
-                        <li class="user-name"><span>Akihiko Avaron</span></li>
+                        <li class="user-name"><span>
+                                {{ Auth::user()->name }} </span>
+                        </li>
+                        <!-- <li class="user-name"><span>Akihiko Avaron</span></li> -->
                         <li class="dropdown avatar-dropdown">
-                            <img src="{{asset('asset/img/avatar.jpg')}}" class="img-circle avatar" alt="user name"
+                            <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" />
                             <ul class="">
                         </li>
@@ -86,8 +89,9 @@
                 </div>
 
 
+
                 <div class="col-md-1">
-                    <img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header">
+                    <a href="/keranjangbelanja"><img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header"></a>
                 </div>
 
             </div>
@@ -107,7 +111,7 @@
                                     class="header-left"> </center>
                         </div>
                     </li>
-                    <li><a href="home" class=" nav-header">
+                    <li><a href="/home" class=" nav-header">
                         <span class="fa fa-home" aria-hidden="true"></span> Home <span
                             class="fa-angle-right fa right-arrow text-right"></span> </a>
                     </li>
@@ -124,7 +128,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class=" nav-header">
+                        <a href="/historyorder" class=" nav-header">
                             <span class="fa fa-history" aria-hidden="true"></span> History Orders
                             <span class="fa-angle-right fa right-arrow text-right"></span>
                         </a>

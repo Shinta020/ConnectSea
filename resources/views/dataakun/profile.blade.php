@@ -1,5 +1,14 @@
 @extends("layout.template")
 @section('content')
+<style>
+    .kotak {
+            border-radius: 5px;
+            height : 100px;
+            background: white;
+            padding: 50px;
+
+        }
+</style>
 <div class="container-fluid">
   <div class="row">
     <div class="col col-lg-8 col-md-8">
@@ -41,13 +50,15 @@
         </div>
       </div>
     </div>
+
     <div class="col col-lg-4 col-md-4">
+    <div class="kotak">
         <div class="card card-primary card-outline">
           <div class="card-header">
             <h3 class="card-title text-center">Option</h3>
           </div>
           <div class="card-body">
-            <a href="/profile/edit" class="btn btn-info btn-block">History Orders</a>
+            <a href="/historyorder" class="btn btn-info btn-block">History Orders</a>
             <br>
             <a href="/profile/edit" class="btn btn-info btn-block">Pendings Review</a>
             <br>
@@ -55,10 +66,10 @@
             <br>
             <a href="/profile/edit" class="btn btn-info btn-block">Change Password</a>
             <br>
-
             </div>
         </div>
-      </div>
+    </div>
+    </div>
   </div>
 </div>
 @endsection
