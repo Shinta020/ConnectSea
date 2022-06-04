@@ -84,8 +84,6 @@
 
 
         /* CountDown */
-
-
         #countdown {
             margin: 0 auto;
             display: block;
@@ -363,7 +361,7 @@
                         </div>
                         <script>
                             window.onload = () => {
-                                const deadline = new Date("June 2, 2022 00:00:00");
+                                const deadline = new Date("June 5, 2022 00:00:00");
                                 startTimer("clock", deadline)
                             };
                             // Ganti tahun bulan tanggal dan jam sesuai dengan batas promo

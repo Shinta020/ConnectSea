@@ -1,11 +1,63 @@
 @extends('layout.template')
 
 @section('content')
-<style>
-    .btn {
-        font-family:Lora;
-        font-size:18px;
-    }
+    <script>
+        $(document).ready(function() {
+            $("#flip1").click(function() {
+                $("#panel1").slideToggle("milimeter");
+            });
+        });
+        $(document).ready(function() {
+            $("#flip2").click(function() {
+                $("#panel2").slideToggle("milimeter");
+            });
+        });
+        $(document).ready(function() {
+            $("#flip3").click(function() {
+                $("#panel3").slideToggle("milimeter");
+            });
+        });
+        $(document).ready(function() {
+            $("#flip4").click(function() {
+                $("#panel4").slideToggle("milimeter");
+            });
+        });
+        $(document).ready(function() {
+            $("#flip5").click(function() {
+                $("#panel5").slideToggle("milimeter");
+            });
+        });
+    </script>
+
+    <style>
+        .btn {
+            font-family: Lora;
+            font-size: 18px;
+        }
+
+        #flip1, #flip2, #flip3, #flip4, #flip5 {
+            padding: 2px;
+            text-align: center;
+            background-color: #C4C4C4;
+            border: solid 3px #a7a2a2;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            border-radius:5px;
+            color:black;
+            padding:10px;
+        }
+
+        #panel1, #panel2, #panel3, #panel4, #panel5 {
+            padding: 2px;
+            text-align: justify;
+            background-color: #C4C4C4;
+            border: solid 1px #a7a2a2;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            border-radius:5px;
+            color:black;
+            padding:10px;
+        }
 
     </style>
     <div class="container header-left background-all">
@@ -69,5 +121,4 @@
         </div>
         <br>
     </div>
-
 @endsection
