@@ -14,6 +14,7 @@
     <div class="col col-lg-8 col-md-8">
       <div class="card card-primary card-outline">
         <div class="card-body box-profile">
+          <br/>
           <div class="text-center">
             <img src="connectsea\foto-profil-2.jpg" width="100px" height="100px" class="img-circle">
           </div>

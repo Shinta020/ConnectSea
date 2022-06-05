@@ -3,7 +3,7 @@
 
     <div class="container">
         <br/>
-        <form class="form-horizontal" action="/produk" method="get">
+        <form class="form-horizontal" action="/produk" method="get" enctype="multipart/form-data">
             {{ csrf_field() }}
             <!--
             <div class="form-group">
@@ -18,6 +18,8 @@
                 </div>
             </div>
             -->
+
+
 
             <div class="form-group">
                 <label class="control-label col-sm-2" for="kategoriproduk">Kategori Produk</label>

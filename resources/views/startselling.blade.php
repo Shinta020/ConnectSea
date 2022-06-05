@@ -4,9 +4,12 @@
     <div class="container">
 
         <!-- Nama Toko -->
+        @foreach($users as $p)
         <h2 style="color: #004080">
-            {{ $users->name }};
+            {{ $p->name }}
         </h2>
+        @endforeach
+
         <!--
         <div class="row">
             <div class="col-11">

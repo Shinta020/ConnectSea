@@ -11,12 +11,40 @@
 	<br/>
 
     <table class="table table-info table-bordered" border="1">
+		<tr><center>
+			<th>Foto Produk</th>
+			<th>Nama Produk</th>
+            <th>Kategori Produk</th>
+			<th>Harga</th>
+            <th>Berat</th>
+            <th>Deskripsi</th>
+            <th>Aksi</th>
+		</center></tr>
 		@foreach($produk as $p)
 		<tr style="text-align: center">
+			<td><img src="connectsea/{{ $p->imgproduk }}" width="60px" height="60px"></td>
+			<td>{{ $p->namaproduk }}</td>
+			<td>{{ $p->kategoriproduk }}</td>
+            <td>{{ $p->harga }}</td>
+            <td>{{ $p->beratproduk }} kg</td>
+            <td>{{ $p->descproduk }}</td>
             <td>
+                <a href="#"><button class="btn btn-warning"> Edit </button></a>
+				|
+				<a href="/produk/hapus/{{ $p->pegawai_id }}"><button class="btn btn-danger"> Hapus </button></a>
+			</td>
+		</tr>
+		@endforeach
+	</table>
+
+    <!--
+    <div class="container">
+		@foreach($produk as $p)
+		<div class="row">
+            <div class="col-3">
                 <img src="connectsea/{{ $p->imgproduk }}" width="60px" height="60px">
-            </td>
-			<td>
+            </div>
+			<div class="col-9">
                 <h6> {{ $p->namaproduk }} </h6> <br/>
                 <div class="row">
                     <div class="col-2">
@@ -26,6 +54,7 @@
                         {{ $p->kategoriproduk }}
                     </div>
                 </div>
+                <br/>
                 <div class="row">
                     <div class="col-2">
                         Harga :
@@ -34,6 +63,7 @@
                         {{ $p->harga }}
                     </div>
                 </div>
+                <br/>
                 <div class="row">
                     <div class="col-2">
                         Berat
@@ -42,6 +72,7 @@
                         {{ $p->beratproduk }}
                     </div>
                 </div>
+                <br/>
                 <div class="row">
                     <div class="col-2">
                         Deskripsi
@@ -50,10 +81,11 @@
                         {{ $p->descproduk }}
                     </div>
                 </div>
-            </td>
-		</tr>
+            </div>
+		</div>
 		@endforeach
-	</table>
+    </div>
+    -->
 
     <!--
 	<div class="container-fluid">
