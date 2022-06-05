@@ -256,7 +256,7 @@
 
             <div class="col-sm-4">
                 <div class="row-sm-5">
-                    <a href="/pakan">
+                    <a href="/ikan">
                         <div id="box1"><span id="kategori">Hasil Laut</span>
                             <span class="glyphicon glyphicon-chevron-right" id="panah2"></span>
                         </div>
