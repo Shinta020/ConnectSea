@@ -32,8 +32,6 @@
     <script src=" {{ url ('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js') }}"></script>
     <script src=" {{ url ('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js') }}"></script>
 
-
-
     <!-- <link rel="shortcut icon" href="asset/img/logomi.png"> -->
 
 </head>
@@ -87,7 +85,7 @@
 
 
                 <div class="col-md-1">
-                    <img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header">
+                    <a href="/keranjangbelanja"><img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header"></a>
                 </div>
 
             </div>

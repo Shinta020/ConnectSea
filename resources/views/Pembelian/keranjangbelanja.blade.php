@@ -127,7 +127,7 @@
         ?>
                 <input type="hidden" name="kodeproduk[]" class="kodeproduk" value="<?php echo $item['kodeproduk']; ?>" />
                 <tr>
-                    <td><?php echo $item['fileproduk']; ?></td>
+                    <td><?php echo $item['imgproduk']; ?></td>
                     <td><?php echo $item['namaproduk']; ?></td>
                     <td>Rp. <?php echo number_format($item['harga'], 0, ',', '.'); ?> </td>
                     <td>
