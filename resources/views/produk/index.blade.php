@@ -31,7 +31,7 @@
             <td>
                 <a href="#"><button class="btn btn-warning"> Edit </button></a>
 				|
-				<a href="/produk/hapus/{{ $p->pegawai_id }}"><button class="btn btn-danger"> Hapus </button></a>
+				<a href=""/produk/hapus/{{ $p->kodeproduk }}""><button class="btn btn-danger"> Hapus </button></a>
 			</td>
 		</tr>
 		@endforeach

@@ -69,7 +69,7 @@
                                 <center>
                                     <span class="glyphicon glyphicon-list-alt"></span><br />
                                     <p>12</p>
-                                    <a href="#"><button type="button" class="btn btn-default">My
+                                    <a href="/produk"><button type="button" class="btn btn-default">My
                                             Product</button></a>
                                 </center>
                             </p>
