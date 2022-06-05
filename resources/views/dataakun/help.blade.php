@@ -1,6 +1,7 @@
 @extends('layout.template')
 
 @section('content')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#flip1").click(function() {
@@ -35,28 +36,36 @@
             font-size: 18px;
         }
 
-        #flip1, #flip2, #flip3, #flip4, #flip5 {
+        #flip1,
+        #flip2,
+        #flip3,
+        #flip4,
+        #flip5 {
             padding: 2px;
             text-align: center;
             background-color: #C4C4C4;
             border: solid 3px #a7a2a2;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20px;
-            border-radius:5px;
-            color:black;
-            padding:10px;
+            border-radius: 5px;
+            color: black;
+            padding: 10px;
         }
 
-        #panel1, #panel2, #panel3, #panel4, #panel5 {
+        #panel1,
+        #panel2,
+        #panel3,
+        #panel4,
+        #panel5 {
             padding: 2px;
             text-align: justify;
             background-color: #C4C4C4;
             border: solid 1px #a7a2a2;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 18px;
-            border-radius:5px;
-            color:black;
-            padding:10px;
+            border-radius: 5px;
+            color: black;
+            padding: 10px;
         }
 
     </style>

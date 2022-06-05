@@ -82,6 +82,11 @@
 
         }
 
+        #home, #home1, #home2 {
+            width:550px;
+            height:200px;
+        }
+
 
         /* CountDown */
         #countdown {
@@ -92,152 +97,98 @@
 
         }
 
-        #countdown p {
-            color: #555555;
-            text-align: center;
-            font-size: 30px;
-            padding: 20px;
-            line-height: 1;
-        }
-
-        #clock span {
-            float: left;
-            text-align: center;
-            font-size: 16px;
-            margin: 0 5px;
-            color: #000;
-            padding: 5px;
-            width: 52px;
+        #days,
+        #hours,
+        #minutes,
+        #seconds {
             border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        #clock span:nth-child(1) {
-            background: #7196da;
-        }
-
-        #clock span:nth-child(2) {
-            background: #7196da;
-        }
-
-        #clock span:nth-child(3) {
-            background: #7196da;
-        }
-
-        #clock span:nth-child(4) {
-            background: #7196da;
-            color: #000;
-        }
-
-        #clock:after {
-            content: &quot;
-            &quot;
-            ;
-            display: block;
-            clear: both;
-        }
-
-        #units span {
-            float: none;
-            width: 40px;
             text-align: center;
-            margin: 0;
-            color: #55555;
             padding: 5px;
-            box-sizing: border-box;
-            letter-spacing: 1px;
+            font-size: 20px;
+            background: #5D87D3;
+            width: 55px;
+            display: inline-block;
+            color: black;
         }
 
-        @media (max-width: 640px) {
-            #countdown {
-                width: 100%;
-                margin: 0 auto;
-            }
-
-            #units span {
-                font-size: 12px;
-            }
-
-            .batas-promo {
-                float: none
-            }
+        span.turn {
+            animation: turn 0.7s ease;
         }
 
-        @media (max-width: 360px) {
-            #countdown {
-                width: 100%;
-                margin: 0 auto;
+        @keyframes turn {
+            0% {
+                transform: rotateX(0deg)
             }
 
-            #countdown span {
-                font-size: 20px;
-            }
-
-            #units span,
-            #countdown p {
-                font-size: 18px;
+            100% {
+                transform: rotateX(360deg)
             }
         }
 
     </style>
 
     {{-- Countdown Timer --}}
-    <script>
-        /*<![CDATA[*/
-        const updateTimer = (deadline) => {
-            // calculates time left until deadline
-            const time = deadline - new Date();
-            return {
-                //'days': Math.floor(time / (1000 * 60 * 60 * 24)),
-                'hours': Math.floor((time / (1000 * 60 * 60)) % 24),
-                'minutes': Math.floor((time / (1000 * 60)) % 60),
-                'seconds': Math.floor((time / (1000)) % 60),
-                'total': time
-            };
+    <script type="text/javascript">
+        function animation(span) {
+            span.className = "turn";
+            setTimeout(function() {
+                span.className = ""
+            }, 700);
         }
 
-        const animateClock = (span) => {
-            // animation lasts for 0.5 seconds
-            span.className = 'turn';
-            setTimeout(() => {
-                span.className = '';
-            }, 500);
-        }
+        function Countdown() {
 
-        const startTimer = (id, deadline) => {
-            // calls updateTimer every second
-            const timeInterval = setInterval(() => {
-                const clock = document.getElementById(id);
-                let timer = updateTimer(deadline);
+            setInterval(function() {
 
-                clock.innerHTML =
-                    //'<span>' + timer.days + '</span>' +
-                    '<span>' + timer.hours + '</span>' +
-                    '<span>' + timer.minutes + '</span>' +
-                    '<span>' + timer.seconds + '</span>';
+                //var hari    = document.getElementById("days");
+                var jam = document.getElementById("hours");
+                var menit = document.getElementById("minutes");
+                var detik = document.getElementById("seconds");
 
-                const spans = clock.getElementsByTagName("span");
-                animateClock(spans[3]);
-                if (timer.seconds == 59) animateClock(spans[2]);
-                if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
-                if (timer.minutes == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(spans[0]);
-                // check if deadline has passed
-                if (timer.total < 1) {
-                    clearInterval(timeInterval);
-                    clock.innerHTML =
-                        '<span>0</span><span>0</span><span>0</span><span>0</span>';
+                var deadline = new Date("June 5, 2022 23:59:59");
+                var waktu = new Date();
+                var distance = deadline - waktu;
+
+                //var days    = Math.floor((distance / (1000*60*60*24)));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                //    if (days < 10)
+                //    {
+                //       days = '0' + days;
+                //    }
+                if (hours < 10) {
+                    hours = '0' + hours;
                 }
+                if (minutes < 10) {
+                    minutes = '0' + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = '0' + seconds;
+                }
+
+                //hari.innerHTML    = days;
+                jam.innerHTML = hours;
+                menit.innerHTML = minutes;
+                detik.innerHTML = seconds;
+                //animation
+                animation(detik);
+                if (seconds == 0) animation(menit);
+                if (minutes == 0) animation(jam);
+                if (hours == 0) animation(hari);
 
             }, 1000);
         }
-        /*]]>*/
+
+        Countdown();
     </script>
     <div class="container header-left background-all">
         <div>
             <div class="col-4"></div>
             <div class="col-4 bcgrnd">
                 <center>
-                    <h2 class="ofpro-font">6.6 Special Offer</h2>
+                    <h2 class="ofpro-font">ConnectSea</h2>
                 </center>
             </div>
             <div class="col-4"></div>
@@ -250,28 +201,22 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
 
                     <div class="item active">
-                        <img src="connectsea\ofpro.h1.jpg" alt="promo1">
+                        <img src="connectsea\home.png" alt="promo1" id="home">
                     </div>
 
                     <div class="item">
-                        <img src="connectsea\ofpro.h2.jpg" alt="promo2">
+                        <img src="connectsea\home1.png" alt="promo2" id="home1">
                     </div>
 
                     <div class="item">
-                        <img src="connectsea\ofpro.h3.jpg" alt="promo3">
+                        <img src="connectsea\home2.png" alt="promo3" id="home2">
                     </div>
-
-                    <div class="item">
-                        <img src="connectsea\ofpro.h4.jpg" alt="promo4">
-                    </div>
-
                 </div>
 
                 <!-- Left and right controls -->
@@ -311,7 +256,7 @@
 
             <div class="col-sm-4">
                 <div class="row-sm-5">
-                    <a href="/pakan">
+                    <a href="/ikan">
                         <div id="box1"><span id="kategori">Hasil Laut</span>
                             <span class="glyphicon glyphicon-chevron-right" id="panah2"></span>
                         </div>
@@ -351,21 +296,16 @@
                             <p id="fs">Flash Sale</p>
                         </div>
                         <div id='countdown' class="col-sm">
-                            <div id='clock'></div>
-                            <!--<div id='units'>
-                                            <span>Hari</span>
-                                            <span>Jam</span>
-                                            <span>Menit</span>
-                                            <span>Detik</span>
-                                            </div>-->
+                            <div id="clock">
+                                {{-- <div><span id="days"></span>
+                                <p>Hari</p>
+                            </div> --}}
+                                <span id="hours"></span>
+                                <span id="minutes"></span>
+                                <span id="seconds"></span>
+
+                            </div>
                         </div>
-                        <script>
-                            window.onload = () => {
-                                const deadline = new Date("June 5, 2022 00:00:00");
-                                startTimer("clock", deadline)
-                            };
-                            // Ganti tahun bulan tanggal dan jam sesuai dengan batas promo
-                        </script>
 
                     </div>
                 </div>

@@ -85,7 +85,7 @@
 
 
                 <div class="col-md-1">
-                    <img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header">
+                    <a href="/keranjangbelanja"><img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header"></a>
                 </div>
 
             </div>

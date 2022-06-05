@@ -89,3 +89,8 @@ Route::post('/ofpro2/update','Pembelian\OfferandPromo@update');
 // Start Selling by Cahya
 //route CRUD
 Route::get('/startselling','StartsellingController@index');
+
+Route::get('/coba', function () {
+    return view('coba');
+
+});
