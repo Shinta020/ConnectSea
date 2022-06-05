@@ -31,6 +31,7 @@ class ProdukController extends Controller
         DB::table('produk')->insert([
             'kategoriproduk' => $request->kategoriproduk,
             'namaproduk' => $request->namaproduk,
+            'qty' => $request->qty,
             'harga' => $request->harga,
             'beratproduk' => $request->berat,
             'descproduk' => $request->descproduk,
@@ -48,6 +49,33 @@ class ProdukController extends Controller
         DB::table('produk')->where('kodeproduk',$kodeproduk)->delete();
 
         // alihkan halaman ke halaman produk
+        return redirect('/produk');
+    }
+
+    // method untuk edit data produk
+    public function edit($kodeproduk)
+    {
+        // mengambil data produk berdasarkan id yang dipilih
+        $produk = DB::table('produk')->where('kodeproduk',$kodeproduk)->get();
+        // passing data produk yang didapat ke view edit.blade.php
+        return view('produk.edit',['produk' => $produk]);
+
+    }
+
+    // update data produk
+    public function update(Request $request)
+    {
+        // update data produk
+        DB::table('produk')->where('kodeproduk', $request->kodeproduk)->update([
+            'kategoriproduk' => $request->kategoriproduk,
+            'namaproduk' => $request->namaproduk,
+            'qty' => $request->qty,
+            'harga' => $request->harga,
+            'beratproduk' => $request->berat,
+            'descproduk' => $request->descproduk,
+            'imgproduk' => $request->imgproduk
+        ]);
+        // alihkan halaman ke halaman absen
         return redirect('/produk');
     }
 }

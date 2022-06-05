@@ -3,7 +3,7 @@
 
     <div class="container">
         <br/>
-        <form class="form-horizontal" action="/produk" method="get" enctype="multipart/form-data">
+        <form class="form-horizontal" action="/produk" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <!--
             <div class="form-group">
@@ -19,21 +19,30 @@
             </div>
             -->
 
-
-
             <div class="form-group">
                 <label class="control-label col-sm-2" for="kategoriproduk">Kategori Produk</label>
                 <div class="col-sm-1">:</div>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" id="kategoriproduk" name="kategoriproduk" required="required">
+                    <select class="form-control" id="kategoriproduk" name="kategoriproduk" required="required">
+                        <?php
+						$opt = array('Hasil Laut','Bibit','Pakan Ikan');
+						foreach($opt as $kategoriproduk) echo "<option value='".$kategoriproduk."'>".$kategoriproduk."</option>";
+						?>
+                    </select>
                 </div>
             </div>
-
             <div class="form-group">
                 <label class="control-label col-sm-2" for="namaproduk">Nama Produk</label>
                 <div class="col-sm-1">:</div>
                 <div class="col-sm-9">
                     <input type="text" class="form-control" id="namaproduk" name="namaproduk" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="qty">Jumlah</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" id="qty" name="qty" required="required">
                 </div>
             </div>
             <div class="form-group">
@@ -64,7 +73,7 @@
                     <input type="file" class="form-control" id="imgproduk" name="imgproduk" required="required">
                 </div>
             </div>
-            <center><button type="submit" class="col-2 form-control btn-secondary">Simpan Data</button></center>
+            <center><button type="submit" class="col-2 form-control btn-secondary" value="kirim">Simpan Data</button></center>
         </form>
     </div>
 

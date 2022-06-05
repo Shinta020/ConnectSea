@@ -67,6 +67,8 @@ Route::get('/produk','ProdukController@index');
 Route::get('/produk/tambah','ProdukController@tambah');
 Route::post('/produk','ProdukController@store');
 Route::get('/produk/hapus/{kodeproduk}','ProdukController@hapus');
+Route::get('/produk/edit/{kodeproduk}','ProdukController@edit');
+Route::post('/produk/update', 'ProdukController@update');
 
 //route keranjang belanja
 Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@index');

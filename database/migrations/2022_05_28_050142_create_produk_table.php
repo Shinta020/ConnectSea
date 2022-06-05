@@ -17,6 +17,7 @@ class CreateProdukTable extends Migration
             $table->bigIncrements('kodeproduk');
             $table->string('kategoriproduk');
             $table->string('namaproduk');
+            $table->integer('qty');
             $table->integer('harga');
             $table->integer('beratproduk');
             $table->string('descproduk');
