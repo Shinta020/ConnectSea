@@ -22,6 +22,7 @@ class CreateProdukTable extends Migration
             $table->integer('beratproduk');
             $table->string('descproduk');
             $table->string('imgproduk');
+            $table->integer('id_toko');
             $table->timestamps();
            // $table->string('namatokoproduk')->unsigned();
         });

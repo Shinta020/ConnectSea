@@ -73,6 +73,17 @@
                     <input type="file" class="form-control" id="imgproduk" name="imgproduk" required="required">
                 </div>
             </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="id_toko">Toko</label>
+                <div class="col-sm-1">:</div>
+                <div class="col-sm-9">
+                    <select id="id_toko" name="id_toko" required="required" style="width: 100%">
+                        @foreach($users as $p)
+                            <option value="{{ $p->id }}"> {{ $p->name }}</option>
+                        @endforeach
+                    </select><br>
+                </div>
+            </div>
             <center><button type="submit" class="col-2 form-control btn-secondary" value="kirim">Simpan Data</button></center>
         </form>
     </div>

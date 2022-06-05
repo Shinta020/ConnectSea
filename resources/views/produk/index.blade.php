@@ -19,6 +19,7 @@
 			<th><center>Harga</center></th>
             <th><center>Berat</center></th>
             <th><center>Deskripsi</center></th>
+            <th><center>Toko</center></th>
             <th><center>Aksi</center></th>
 		</tr>
 		@foreach($produk as $p)
@@ -30,7 +31,10 @@
             <td>Rp {{ $p->harga }},00</td>
             <td>{{ $p->beratproduk }} kg</td>
             <td>{{ $p->descproduk }}</td>
+            <td>{{ $p->name }}</td>
             <td>
+                <a href="/produk/edit/{{ $p->kodeproduk }}"><button class="btn btn-warning"> Flash Sale </button></a>
+				|
                 <a href="/produk/edit/{{ $p->kodeproduk }}"><button class="btn btn-warning"> Edit </button></a>
 				|
 				<a href="/produk/hapus/{{ $p->kodeproduk }}"><button class="btn btn-danger"> Hapus </button></a>

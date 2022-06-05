@@ -10,7 +10,10 @@ class ProdukController extends Controller
     public function index()
     {
     	// mengambil data dari table produk
-    	$produk = DB::table('produk')->get();
+    	$produk = DB::table('produk')
+            ->join('users', 'produk.id_toko', '=', 'users.id')
+            ->select('produk.*', 'users.name')
+            ->get();
 
     	// mengirim data produk ke view index
     	return view('produk.index',['produk' => $produk]);
@@ -21,7 +24,9 @@ class ProdukController extends Controller
     public function tambah()
     {
         // memanggil view tambah
-        return view('produk.tambah');
+        $users = DB::table('users')->orderBy('name', 'asc')->get();
+
+        return view('produk.tambah', ['users' => $users]);
     }
 
     // method untuk insert data ke table produk
@@ -29,13 +34,15 @@ class ProdukController extends Controller
     {
         // insert data ke table produk
         DB::table('produk')->insert([
+            //'kodeproduk' => $request->kodeproduk,
             'kategoriproduk' => $request->kategoriproduk,
             'namaproduk' => $request->namaproduk,
             'qty' => $request->qty,
             'harga' => $request->harga,
             'beratproduk' => $request->berat,
             'descproduk' => $request->descproduk,
-            'imgproduk' => $request->imgproduk
+            'imgproduk' => $request->imgproduk,
+            'id_toko' => $request->id_toko,
         ]);
         // alihkan halaman ke halaman produk
         return redirect('/produk');
