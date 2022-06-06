@@ -46,6 +46,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'LoginController@logout');
 
+//Belva Rizki - Chat
+Route::get('/chat', 'ChatsController@index');
+Route::get('messages', 'ChatsController@fetchMessages');
+Route::post('messages', 'ChatsController@sendMessage');
+
 //Belva Rizki - Profile
 Route::get('/profile', 'ProfileController@profile');
 Route::get('/profile/edit/{id}', 'ProfileController@edit');
