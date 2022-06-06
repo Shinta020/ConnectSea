@@ -3,7 +3,7 @@
 @section('title', 'product ikan')
 
 @section('content')
-
+@foreach($produk as $p)
     <!--BARIS PERTAMA IKAN-->
    <div class="container text-center justify-content-center" style="margin-top: 50px">
         <div class="row text-center pertama">
@@ -11,19 +11,20 @@
 
     <div class="container mt-3">
         <div class="d-grid">
-          <button type="button" class="btn btn-primary btn-block">Ikan</button>
+          <button type="button" class="btn btn-primary btn-block" >Ikan</button>
         </div>
     </div> <br>
     <!--KAKAP MERAH-->
     <div class="container">
+
     <div class="col-sm-2">
         <img src="connectsea\kakapmerah.jpg" alt="ikan1" width="150" height="150">
-            <a href="/getdetailproduk/1">Kakap Merah</a> <br> Rp 70.000/KG
+            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }}</a> <br> {{ $p->harga }}/kg
     </div>
     <!--TUNA-->
     <div class="col-sm-2">
         <img src="connectsea\tuna.jpg" alt="ikan2" width="150" height="150" >
-            <a href="/getdetailproduk/1">Tuna</a> <br> Rp 50.000/KG
+            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }}</a> <br> {{ $p->harga }}/kg
     </div>
     <!--TONGKOL-->
     <div class="col-sm-2">
@@ -118,4 +119,5 @@
         </div>
 </div>
 
+@endforeach
 @endsection
