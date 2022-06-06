@@ -62,23 +62,23 @@
         </div>
           <!--UDANG FLOWER-->
         <div class="col-sm-2">
-                  <img src="connectsea\udangflower.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Udang Flower</a> <br> Rp 10.000/KG
+                  <img src="connectsea\akari.jpg" alt="" width="150" height="150" >
+                        <a href="/getdetailproduk/1">Akari Super</a> <br> Rp 10.000/KG
         </div>
         <!--UDANG GALAH-->
         <div class="col-sm-2">
-                <img src="connectsea\udanggalah.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Udang Galah</a> <br> Rp 20.000/KG
+                <img src="connectsea\aquafun.jpg" alt="" width="150" height="150">
+                        <a href="/getdetailproduk/1">Aquafun Tropical</a> <br> Rp 20.000/KG
         </div>
           <!--UDANG KARANG-->
         <div class="col-sm-2">
-                  <img src="connectsea\udangkarang.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Udang Karang</a> <br> Rp 20.000/KG
+                  <img src="connectsea\mizuho.jpg" alt="" width="150" height="150" >
+                        <a href="/getdetailproduk/1">Mizuho Goldfish </a> <br> Rp 20.000/KG
         </div>
         <!--UDANG PECI-->
         <div class="col-sm-2">
-                <img src="connectsea\udangpeci.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Udang Peci</a> <br> Rp 25.000/KG
+                <img src="connectsea\prodac.jpg" alt="" width="150" height="150">
+                        <a href="/getdetailproduk/1">Prodac Vegetable</a> <br> Rp 25.000/KG
         </div>
 
     <!--BARIS KETIGA LOBSTER-->
@@ -88,33 +88,33 @@
     </div> <br>
         <!--LOBSTER MUTIARA-->
         <div class="col-sm-2">
-                  <img src="connectsea\lobstermutiara.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Lobster Mutiara</a> <br> Rp 50.000/KG
+                  <img src="connectsea\pioner.jpg" alt="" width="150" height="150" >
+                        <a href="/getdetailproduk/1">Pioneer Frozen</a> <br> Rp 50.000/KG
         </div>
         <!--LOBSTER CRAYFISH-->
         <div class="col-sm-2">
-                <img src="connectsea\lobstercrayfish.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Lobster Crayfish</a> <br> Rp 33.000/KG
+                <img src="connectsea\tetramin.jpg" alt="" width="150" height="150">
+                        <a href="/getdetailproduk/2">TetraMin Baby</a> <br> Rp 33.000/KG
         </div>
           <!--LOBSTER BAMBU-->
         <div class="col-sm-2">
-                  <img src="connectsea\lobsterbambu.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Lobster Bambu</a> <br> Rp 30.000/KG
+                  <img src="connectsea\babyfish.jpg" alt="" width="150" height="150" >
+                        <a href="/getdetailproduk/1">Baby Fish</a> <br> Rp 30.000/KG
         </div>
         <!--LOBSTER PASIR-->
         <div class="col-sm-2">
-                <img src="connectsea\lobsterpasir.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Lobster Pasir</a> <br> Rp 25.000/KG
+                <img src="connectsea\sinkvit.jpg" alt="" width="150" height="150">
+                        <a href="/getdetailproduk/1">Sink-Vit</a> <br> Rp 25.000/KG
         </div>
           <!--LOBSTER KIPAS-->
         <div class="col-sm-2">
-                  <img src="connectsea\lobsterkipas.jpg" alt="" width="150" height="150" >
-                        <a href="/getdetailproduk/1">Lobster Kipas</a> <br> Rp 30.000/KG
+                  <img src="connectsea\ecobest.png" alt="" width="150" height="150" >
+                        <a href="/getdetailproduk/1">Ecobest</a> <br> Rp 30.000/KG
         </div>
         <!--LOBSTER PAKISTAN-->
         <div class="col-sm-2">
-                <img src="connectsea\lobsterpakistan.jpg" alt="" width="150" height="150">
-                        <a href="/getdetailproduk/1">Lobster Pakistan</a> <br> Rp 25.000/KG
+                <img src="connectsea\beryl.png" alt="" width="150" height="150">
+                        <a href="/getdetailproduk/1">Fairly Beryl </a> <br> Rp 25.000/KG
         </div>
 </div>
 
