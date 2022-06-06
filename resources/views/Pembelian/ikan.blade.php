@@ -4,6 +4,7 @@
 
 @section('content')
 @foreach($produk as $p)
+
     <!--BARIS PERTAMA IKAN-->
    <div class="container text-center justify-content-center" style="margin-top: 50px">
         <div class="row text-center pertama">
@@ -19,13 +20,14 @@
 
     <div class="col-sm-2">
         <img src="connectsea\kakapmerah.jpg" alt="ikan1" width="150" height="150">
-            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }}</a> <br> {{ $p->harga }}/kg
+            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }}</a> <br>Rp {{ $p->harga }}/KG
     </div>
     <!--TUNA-->
     <div class="col-sm-2">
         <img src="connectsea\tuna.jpg" alt="ikan2" width="150" height="150" >
-            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }}</a> <br> {{ $p->harga }}/kg
+        <a href="/getdetailproduk/{{ $p->kodeproduk }}/5">{{ $p->namaproduk }}</a> <br> Rp {{ $p->harga }}/KG
     </div>
+
     <!--TONGKOL-->
     <div class="col-sm-2">
         <img src="connectsea\tongkol.jpg" alt="" width="150" height="150">
@@ -121,3 +123,4 @@
 
 @endforeach
 @endsection
+

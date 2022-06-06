@@ -70,8 +70,11 @@ Route::get('/produk/hapus/{kodeproduk}','ProdukController@hapus');
 Route::get('/produk/edit/{kodeproduk}','ProdukController@edit');
 Route::post('/produk/update', 'ProdukController@update');
 
-//route keranjang belanja
-Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@index');
+//route keranjang belanja by Nur Nindya Risnina
+Route::get('/cart','Pembelian\KeranjangBelanja@index');
+Route::get('/cart/hapus/{id}', 'Pembelian\KeranjangBelanja@hapus')->where("id","[0-9]+");
+Route::get('/transaksi/tambah', 'Pembelian\KeranjangBelanja@tambah_transaksi');
+
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');
@@ -90,7 +93,7 @@ Route::post('/ofpro2/update','Pembelian\OfferandPromo@update');
 //route CRUD
 Route::get('/startselling','StartsellingController@index');
 
-Route::get('/coba', function () {
-    return view('coba');
-
+//Nina
+Route::get('/flashsale', function () {
+    return view('flashsale.index');
 });
