@@ -69,6 +69,7 @@ Route::post('/produk','ProdukController@store');
 Route::get('/produk/hapus/{kodeproduk}','ProdukController@hapus');
 Route::get('/produk/edit/{kodeproduk}','ProdukController@edit');
 Route::post('/produk/update', 'ProdukController@update');
+Route::post('/produk/{id_toko}', 'ProdukController@produktoko')
 
 //route keranjang belanja
 Route::get('/keranjangbelanja','Pembelian\KeranjangBelanja@index');
@@ -92,5 +93,7 @@ Route::get('/startselling','StartsellingController@index');
 
 Route::get('/coba', function () {
     return view('coba');
-
 });
+
+// Flash Sale by Cahya
+Route::post('/flashsale','FlashsaleController@index');

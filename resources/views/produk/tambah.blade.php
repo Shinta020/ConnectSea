@@ -1,91 +1,71 @@
 @extends('layout.template')
 @section('content')
 
-    <div class="container">
-        <br/>
-        <form class="form-horizontal" action="/produk" method="post" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            <!--
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="kategoriproduk">Kategori Produk</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <select class="form-control" id="kategoriproduk" name="kategoriproduk">
-                        <option>Hasil Laut</option>
-                        <option>Bibit</option>
-                        <option>Pakan</option>
-                    </select>
-                </div>
-            </div>
-            -->
+<div class="col-md-9" style="color:black; font-family: verdana;">
 
+    <center>
+        <br/>
+        <h3 style="color: #004080; font-weight: bold;"> Input New Product </h3>
+        <br/>
+    </center>
+    <div class="container-fluid">
+        <form class="form-group" action="/produk" method="post" enctype="multipart/form-data">
+            {{ csrf_field() }}
             <div class="form-group">
-                <label class="control-label col-sm-2" for="kategoriproduk">Kategori Produk</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <select class="form-control" id="kategoriproduk" name="kategoriproduk" required="required">
-                        <?php
-						$opt = array('Hasil Laut','Bibit','Pakan Ikan');
-						foreach($opt as $kategoriproduk) echo "<option value='".$kategoriproduk."'>".$kategoriproduk."</option>";
-						?>
-                    </select>
-                </div>
+                <label class="control-label" style="" for="kategoriproduk">Kategori Produk :</label>
+                <select class="form-control" id="kategoriproduk" name="kategoriproduk" required="required">
+                    <?php
+                    $opt = array('Hasil Laut','Bibit','Pakan Ikan');
+                    foreach($opt as $kategoriproduk) echo "<option value='".$kategoriproduk."'>".$kategoriproduk."</option>";
+                    ?>
+                </select>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="namaproduk">Nama Produk</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="namaproduk" name="namaproduk" required="required">
-                </div>
+                <label class="control-label" for="namaproduk">Nama Produk :</label>
+                <input type="text" class="form-control" id="namaproduk" name="namaproduk" required="required">
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="qty">Jumlah</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <input type="number" class="form-control" id="qty" name="qty" required="required">
-                </div>
+                <label class="control-label" for="qty">Jumlah :</label>
+                <input type="number" class="form-control" id="qty" name="qty" required="required">
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="harga">Harga</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <input type="number" class="form-control" id="harga" name="harga" required="required">
-                </div>
+                <label class="control-label" for="harga">Harga :</label>
+                <input type="number" class="form-control" id="harga" name="harga" required="required">
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="berat">Berat</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <input type="number" class="form-control" id="berat" name="berat" required="required">
-                </div>
+                <label class="control-label" for="berat">Berat :</label>
+                <input type="number" class="form-control" id="berat" name="berat" required="required">
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="descproduk">Deskripsi</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <textarea class="form-control" rows="5" id="descproduk" name="descproduk" required="required"></textarea>
-                </div>
+                <label class="control-label" for="descproduk">Deskripsi :</label>
+                <textarea class="form-control" rows="5" id="descproduk" name="descproduk" required="required"></textarea>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="imgproduk">Foto Produk</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <input type="file" class="form-control" id="imgproduk" name="imgproduk" required="required">
-                </div>
+                <label class="control-label" for="id_toko">Toko :</label>
+                <select id="id_toko" name="id_toko" required="required" style="width: 100%">
+                    @foreach($users as $p)
+                        <option value="{{ $p->id }}"> {{ $p->name }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="id_toko">Toko</label>
-                <div class="col-sm-1">:</div>
-                <div class="col-sm-9">
-                    <select id="id_toko" name="id_toko" required="required" style="width: 100%">
-                        @foreach($users as $p)
-                            <option value="{{ $p->id }}"> {{ $p->name }}</option>
-                        @endforeach
-                    </select><br>
-                </div>
+                <label class="control-label" for="imgproduk">Foto Produk :</label>
+                <input type="file" class="form-control" id="imgproduk" name="imgproduk" required="required">
             </div>
-            <center><button type="submit" class="col-2 form-control btn-secondary" value="kirim">Simpan Data</button></center>
+            <br/>
+            <center>
+                <button type="submit" class="btn btn-primary" value="kirim">Simpan Data Produk</button>
+            </center>
         </form>
     </div>
+
+</div>
+
+<div class="col-md-3">
+<br/>
+<br/>
+<h3 style="color: #004080; font-weight: bold;">Website Connectsea</h3>
+<img src="{{asset('connectsea\proud-of-indonesia.png')}}" style="width: 350px;">
+</div>
 
 @endsection

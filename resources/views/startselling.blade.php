@@ -5,9 +5,7 @@
 
         <!-- Nama Toko -->
         @foreach($users as $p)
-        <h2 style="color: #004080">
-            {{ $p->name }}
-        </h2>
+        <h2 class="startselling-username" style="color: #004080" value="{{ $p->name }}" >{{ $p->name }}</h2>
         @endforeach
 
         <!--
@@ -57,9 +55,6 @@
 
         <!-- Kotak-kotak -->
         <div class="grid-startselling">
-
-                <!-- Bagian Kiri -->
-                <div class="col-sm-9">
 
                     <!-- Choice Atas -->
                     <div class="row" style="background-color:#004080;">
@@ -118,16 +113,41 @@
                     <!-- Pembatas -->
                     <br/>
 
-                <!-- Bagian Kanan -->
-                <div class="col-sm-3">
-                    <center>
-                    <img src="{{asset('connectsea\logo.png')}}" width="130px" height="110px">
-                    <br/>
-                    <a href="#">
-                        <button type="button" class="btn btn-primary"> Change Profil Picture </button>
-                    </a>
-                    </center>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+
+    <!-- Nitip View Flash Sale -->
+    <div class="well">
+    <h1>FLASH SALE</h1>
+        <div class="product-group">
+            <div class="media-left">
+                <img src="img_avatar1.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Left-aligned</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <center><img src="{{asset('connectsea\pinokio.png')}}" height="150px"></center>
                 </div>
+                <div class="col-md-10">
+                    <h3> NAMA PRODUK </h3>
+                    <br/>
+                    HARGA
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+
 @endsection

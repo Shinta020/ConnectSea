@@ -85,4 +85,21 @@ class ProdukController extends Controller
         // alihkan halaman ke halaman absen
         return redirect('/produk');
     }
+
+    // menampilkan produk per toko
+//    public function produktoko($id_toko)
+//    {
+        // menangkap data pencarian
+//        $produktoko = $request->cari;
+
+        // mengambil data dari table absen sesuai pencarian data
+//        $produk = DB::table('produk')
+//            ->join('users', 'produk.id_toko', '=', 'users.id')
+//            ->select('produk.*', 'users.name')
+//            ->where('name', 'like', "{{ $p->id }}")
+
+            // mengirim data absen ke view index
+//        return view('produk.index', ['produk' => $produk]);
+
+//    }
 }
