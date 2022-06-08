@@ -17,7 +17,7 @@ class ProfileController extends Controller
     //     return view('editprofile', $user);
     // }
 
-    public function profile()
+    public function profile(Request $request)
     {
     	// mengambil data dari table user
     	$users = DB::table('users')->get();
@@ -45,7 +45,8 @@ class ProfileController extends Controller
             'name' => $request->nama,
             'alamat' => $request->alamat,
             'notelp' => $request->notelp,
-            'email' => $request->email
+            'email' => $request->email,
+            'image' => $request->image
         ]);
         // alihkan halaman ke halaman profile
         return redirect('/profile');

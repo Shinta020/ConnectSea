@@ -15,10 +15,10 @@
       <div class="card card-primary card-outline">
         <div class="card-body box-profile">
           <br/>
-          <div class="text-center">
-            <img src="connectsea\foto-profil-2.jpg" width="100px" height="100px" class="img-circle">
-          </div>
           @foreach($users as $p)
+          <div class="text-center">
+            <img src="connectsea/{{ $p->image }}"width="100px" height="100px" class="img-circle">
+          </div>
           <h3 class="profile-username text-center" value="{{ $p->name }}" >{{ $p->name }}</h3>
           <hr>
           <strong>
