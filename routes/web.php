@@ -1,5 +1,7 @@
 <?php
-
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,8 +50,8 @@ Route::get('/logout', 'LoginController@logout');
 
 //Belva Rizki - Chat
 Route::get('/chat', 'ChatsController@index');
-Route::get('messages', 'ChatsController@fetchMessages');
-Route::post('messages', 'ChatsController@sendMessage');
+// Route::get('messages', 'ChatsController@fetchMessages');
+// Route::post('messages', 'ChatsController@sendMessage');
 
 //Belva Rizki - Profile
 Route::get('/profile', 'ProfileController@profile');
@@ -84,6 +86,7 @@ Route::get('/transaksi/tambah', 'Pembelian\KeranjangBelanja@tambah_transaksi');
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');
+Route::get('/historyorder/delete/{historyid}', 'HistoryOrderController@delete');
 
 // Shinta - Offer and Promo
 Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');
@@ -106,6 +109,13 @@ Route::get('/flashsale', function () {
 
 // Flash Sale by Cahya
 //Route::post('/flashsale','FlashsaleController@index');
+
+Route::get('/pro', [ProductIkanController::class, 'productList'])->name('products.list');
+Route::get('cart', [Pembelian\CartController::class, 'cartList'])->name('cart.list');
+Route::post('cart', [Pembelian\CartController::class, 'addToCart'])->name('cart.store');
+//Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
+//Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
+//Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 
 // Shinta - Order Detail
 Route::get('/orderdetail', function () {
