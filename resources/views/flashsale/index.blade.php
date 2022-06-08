@@ -108,17 +108,19 @@
             <img src="/connectsea/iconfs.png" id="icon">
         </div>
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-8">
         <br/>
         <h2 style="color:#004080;">Flash Sale</h2>
     </div>
-    <div id='countdown' class="col-md-2">
+    <div id='countdown' class="col-md-3">
         <br/>
+        <center>
         <div id="clock">
             <span id="hours"></span>
             <span id="minutes"></span>
             <span id="seconds"></span>
         </div>
+        </center>
     </div>
 </div>
 
@@ -142,7 +144,7 @@
                 </a>
                     <a href="#">
                         <br/>
-                        <button type="button" class="btn btn-primary"> Add to Cart</button>
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
                     </a>
             </div>
             </div>

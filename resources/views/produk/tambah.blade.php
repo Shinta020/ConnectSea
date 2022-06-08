@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label" for="imgproduk">Foto Produk :</label>
-                <input type="file" class="form-control" id="imgproduk" name="imgproduk" required="required">
+                <input type="file" id="imgproduk" name="imgproduk" required="required">
             </div>
             <br/>
             <center>

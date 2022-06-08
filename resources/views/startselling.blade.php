@@ -4,9 +4,7 @@
     <div class="container">
 
         <!-- Nama Toko -->
-        @foreach($users as $p)
-        <h2 class="startselling-username" style="color: #004080" value="{{ $p->name }}" >{{ $p->name }}</h2>
-        @endforeach
+        <h2 class="startselling-username" style="color: #004080">Start Selling</h2>
 
         <!--
         <div class="row">
