@@ -46,7 +46,33 @@
           </p>
           <hr>
           <a href="/profile/edit/{{ $p->id }}" class="btn btn-primary btn-block">Edit Profile</a>
-          <a href="/profile/delete/{{ $p->id }}" class="btn btn-danger btn-block">Delete Account</a>
+          <!--<a href="/profile/delete/{{ $p->id }}" class="btn btn-danger btn-block">Delete Account</a>-->
+            <a type="" class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModal">Delete Account</a>
+            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Delete Account</button>-->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Delete Account</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Apakah anda yakin ingin menghapus akun?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-sm-10">
+                                <a href="/profile/delete/{{ $p->id }}" class="btn btn-primary" role="button">Yes</a>
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         @endforeach
         </div>
       </div>

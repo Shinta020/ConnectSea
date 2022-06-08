@@ -20,18 +20,20 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
         .navbar {
-            background-color: rgb(68, 85, 240);
+            background-color: whitesmoke;
         }
         body {
-            background-color: rgb(88, 143, 243);
+            background-image: url("connectsea/bg.jpeg");
+            background-repeat: no-repeat;
+            background-size:cover
         }
-      
+
 
     </style>
 
 <nav class="navbar navbar-expand-md navbar-light shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand ofpro-font" href="{{ url('/') }}">
             ConnectSea
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -48,11 +50,11 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
-                    <li class="nav-item">
+                    <li class="nav-item ofpro-font">
                         <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
                     @if (Route::has('register'))
-                        <li class="nav-item">
+                        <li class="nav-item ofpro-font">
                             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     @endif

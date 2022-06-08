@@ -4,45 +4,33 @@
 
 @section('content')
 
-<div class="container header-left background-all">
-	<h3 class="text-center">Detail Voucher</h3>
+    <div class="container header-left background-all">
+        <center>
+            <br />
+            <h3 style="color: white; font-weight: bold;"> Detail Voucher </h3>
+            <br />
+        </center>
+        <a href="/ofpro" class="btn btn-danger" role="button"> Kembali</a>
+        <br />
+        <br />
 
-	<a href="/ofpro" class="btn btn-secondary"> Kembali</a>
-
-	<br/>
-	<br/>
-
-	@foreach($voucher as $p)
-
-        <div class="">
-            <div class="col-3"> Kode Voucher </div>
-            <div class="col-1">:</div>
-            <div class="col-8">
-                {{ $p->kodevoucher }}
+        @foreach ($voucher as $p)
+            <div class="form-group">
+                <label class="control-label" style="color: white;" for="namaproduk"> Kode Voucher </label>
+                <input type="text" style="color: #004080;" required="required" name="nama" id="nama" value="{{ $p->kodevoucher }}"
+                    class="form-control">
             </div>
-        </div><br/>
-        <div class="mt-5">
-            <div class="col-3"> Deskripsi </div>
-            <div class="col-1">:</div>
-            <div class="col-8">
-                {{ $p->desc }}
+            <div class="form-group">
+                <label class="control-label" style="color: white;" for="namaproduk"> Deskripsi </label>
+                <input type="text" style="color: #004080;" required="required" name="nama" id="nama" value=" {{ $p->desc }}"
+                    class="form-control">
             </div>
-        </div><br/>
-        <div class="mt-5">
-            <div class="col-3"> Masa Berlaku </div>
-            <div class="col-1">:</div>
-            <div class="col-8">
-                {{ $p->masaberlaku }}
+            <div class="form-group">
+                <label class="control-label" style="color: white;" for="namaproduk"> Masa Berlaku </label>
+                <input type="text" style="color: #004080;" required="required" name="nama" id="nama" value=" {{ $p->masaberlaku }}"
+                    class="form-control">
             </div>
-        </div><br/>
-        <div class="mt-5">
-            <div class="col-3"> Voucher </div>
-            <div class="col-1">:</div>
-            <div class="col-8">
-                {{ $p->imgvoucher }}
-            </div>
-        </div>
-	@endforeach
-</div>
+        @endforeach
+    </div>
 
 @endsection

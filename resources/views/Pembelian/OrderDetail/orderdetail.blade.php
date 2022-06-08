@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <div class="col-sm-10">
-                                        <a href="https://wa.me/+628977401439?text=Halo%20admin%20saya%20ingin%20melakukan%20pembayaran%20"
+                                        <a href="/chat"
                                             class="btn btn-primary" role="button">Kontak Seller</a>
                                     </div>
                                     <div class="col-sm-2">
@@ -111,32 +111,3 @@
         </div>
     </div>
 @endsection
-        <div class="col-sm-6">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Checkout</button>
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Tata Cara Pembayaran</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Silahkan Klik <b>kontak seller</b> untuk melakukan konfirmasi pemesanan dan
-                                pembayaran
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="col-sm-10">
-                                <a href="https://wa.me/+628977401439?text=Halo%20admin%20saya%20ingin%20melakukan%20pembayaran%20"
-                                    class="btn btn-primary" role="button">Kontak Seller</a>
-                            </div>
-                            <div class="col-sm-2">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
