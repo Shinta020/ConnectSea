@@ -19,6 +19,7 @@ public function displayProduk()
 public function getDetailProduk($kodeproduk)
 {
     $produk = DB::table('produk')->where('kodeproduk',$kodeproduk)->get();
+    //$users = DB::table('users')->where('akunid',$akunid)->get();
     $ulasan = UlasanProduk::validasiKetersediaanUlasan($kodeproduk) ;
     if ($ulasan->isEmpty()) {
         $jumlahulasan = 0 ;

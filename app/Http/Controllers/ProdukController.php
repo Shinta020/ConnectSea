@@ -86,6 +86,22 @@ class ProdukController extends Controller
         return redirect('/produk');
     }
 
+    // public function cari(Request $request)
+	// {
+	// 	// menangkap data pencarian
+	// 	$cari = $request->cari;
+
+    // 		// mengambil data dari table produk sesuai pencarian data
+	// 	$produk = DB::table('produk')
+    //         // ->join('users', 'produk.id_toko', '=', 'users.id')
+    //         // ->select('produk.*', 'users.name')
+	// 	    ->where('namaproduk','like',"%".$cari."%")
+
+    // 		// mengirim data produk ke view index
+	// 	return view('produk.index',['produk' => $produk]);
+
+	// }
+
     // menampilkan produk per toko
 //    public function produktoko($id_toko)
 //    {

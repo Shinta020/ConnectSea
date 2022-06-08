@@ -94,25 +94,54 @@
             <hr>
 
             <!-- Input Ulasan by Cahya -->
-            <div class="col-md-9"> </div>
-            <div class="col-md-3">
+            <div class="col-md-10"> </div>
+            <div class="col-md-2">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Nilai</button>
+
+                <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
 
                       <!-- Modal content-->
                       <div class="modal-content">
                         <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Modal Header</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <center><strong><h4 class="modal-title" style="color: black;">Nilai Produk</h4></strong></center>
                         </div>
-
-                        <div class="modal-body">
-                          <p>Some text in the modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-
+                        <form class="form-group" action="/getdetailproduk" method="post" enctype="multipart/form-data">
+                            {{ csrf_field() }}
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label class="control-label" for="tglulasan">Tanggal Ulasan :</label>
+                                    <input type="date" id="tglulasan" name="tglulasan" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="akunid">Nama :</label>
+                                    <input type="text" class="form-control" id="akunid" name="akunid" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="kodeproduk">Nama Produk :</label>
+                                    <select id="kodeproduk" name="kodeproduk" required="required" style="width: 100%">
+                                        @foreach($produk as $p)
+                                            <option value="{{ $p->kodeproduk }}"> {{ $p->namaproduk }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="desculasan">Deskripsi Ulasan :</label>
+                                    <input type="text" class="form-control" id="desculasan" name="desculasan" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="gambar">Gambar :</label>
+                                    <input type="file" class="form-control" id="gambar" name="gambar">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" style="color: black;">Close</button>
+                                <button type="submit" class="btn btn-primary" value="kirim">Kirim Ulasan</button>
+                            </div>
+                        </form>
                       </div>
 
                     </div>
