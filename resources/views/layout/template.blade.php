@@ -100,12 +100,13 @@
                 </div>
 
                 <div class="col-md-7">
+                    <!--
                     <div class="form-group row" style="margin-top: 10px;" action="/produk" method="GET">
                         <div class="col-md-4"><input class="form-control" type="text" name="cari" placeholder="Type anywhere to Search" value="{{ old('cari') }}"></div>
                         <div class="col-md-1"><input class="form-control btn btn-link" type="submit" value="Telusuri"></div>
                         <div class="col-md-7"> </div>
                     </div>
-                    <!--
+                    -->
                     <ul class="nav navbar-nav search-nav">
                         <li>
                             <div class="search">
@@ -118,7 +119,6 @@
                             </div>
                         </li>
                     </ul>
-                    -->
                 </div>
 
                 <div class="col-md-2">
