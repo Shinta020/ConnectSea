@@ -68,8 +68,13 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src=" {{ url ('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js') }}"></script>
     <script src=" {{ url ('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  referrerpolicy="no-referrer"></script>
 
     <!-- <link rel="shortcut icon" href="asset/img/logomi.png"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -224,7 +229,28 @@
                                         <script src=" {{ asset('asset/js/plugins/jquery.vmap.sampledata.js') }}"></script>
                                         <script src=" {{ asset('asset/js/plugins/chart.min.js') }}"></script>
 
+                                        <!-- dropdown -->
+                                        <script>
+                                            /* Saat pengguna mengklik tombol,
+                                            toggle antara menyembunyikan dan menampilkan konten dropdown */
+                                            function myFunction() {
+                                              document.getElementById("myDropdown").classList.toggle("show");
+                                            }
 
+                                            // Tutup dropdown jika pengguna mengklik di luarnya
+                                            window.onclick = function(event) {
+                                              if (!event.target.matches('.dropbtn')) {
+                                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                var i;
+                                                for (i = 0; i < dropdowns.length; i++) {
+                                                  var openDropdown = dropdowns[i];
+                                                  if (openDropdown.classList.contains('show')) {
+                                                    openDropdown.classList.remove('show');
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            </script>
                                         <!-- custom -->
                                         <script src="{{ asset('asset/js/main.js') }}"></script>
                                         <script type="text/javascript">

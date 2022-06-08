@@ -145,7 +145,7 @@
                 var menit = document.getElementById("minutes");
                 var detik = document.getElementById("seconds");
 
-                var deadline = new Date("June 5, 2022 23:59:59");
+                var deadline = new Date("June 9, 2022 23:59:59");
                 var waktu = new Date();
                 var distance = deadline - waktu;
 

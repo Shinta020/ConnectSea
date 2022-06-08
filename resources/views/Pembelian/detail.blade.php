@@ -49,10 +49,10 @@
     </style>
     @foreach ($produk as $p)
         <div class="container header-left background-all">
-            <h1>KAKAP MERAH</h1>
+            <h1>{{ $p->namaproduk }}</h1>
             <div class="row">
                 <div class="col-sm-3">
-                    <center><img src="\connectsea\kakapmerah.jpg" alt="Cinque Terre" id="tuna"></center>
+                    <center><img src="connectsea/{{$p -> imgproduk}}" alt="Cinque Terre" id="tuna"></center>
                 </div>
                 <h2>Detail Produk</h2>
                 <div class="col-sm-9">
@@ -165,12 +165,15 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="button text-right">
-                        <a href="/keranjangbelanja" class="btn btn-primary text-right">
-                            <img src="{{ asset('connectsea\keranjang-belanja-header.png') }}" width="20px" height="20px">
-                            <span>Add to Cart</span>
-                        </a>
-                    </div>
+                    <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" value="{{ $p->kodeproduk }}" name="id">
+                        <input type="hidden" value="{{ $p->namaproduk }}" name="name">
+                        <input type="hidden" value="{{ $p->harga }}" name="price">
+                        <input type="hidden" value="{{ $p->imgproduk }}"  name="image">
+                        <input type="hidden" value="1" name="quantity">
+                        <button class="px-4 py-2 text-white bg-blue-800 rounded">Add To Cart</button>
+                    </form>
                 </div>
 
                 <div class="col-sm-6">

@@ -33,8 +33,6 @@
             <td>{{ $p->descproduk }}</td>
             <td>{{ $p->name }}</td>
             <td>
-                <a href="/produk/edit/{{ $p->kodeproduk }}"><button class="btn btn-warning"> Flash Sale </button></a>
-				|
                 <a href="/produk/edit/{{ $p->kodeproduk }}"><button class="btn btn-warning"> Edit </button></a>
 				|
 				<a href="/produk/hapus/{{ $p->kodeproduk }}"><button class="btn btn-danger"> Hapus </button></a>
@@ -42,30 +40,6 @@
 		</tr>
 		@endforeach
 	</table>
-</div>
-
-<!--Nyoba Hasil Pencarian View -->
-<div class="container-fluid">
-    <div class="product-card">
-        <div class="card">
-            <center>
-            <img src="connectsea/{{ $p->imgproduk }}" width="60px" height="60px">
-            <div class="header">{{ $p->namaproduk }}</div>
-            <div class="body">
-                {{ $p->harga }}
-            </div>
-            </center>
-        </div>
-        <div class="card">
-            <center>
-            <img src="connectsea/{{ $p->imgproduk }}" width="60px" height="60px">
-            <div class="header">{{ $p->namaproduk }}</div>
-            <div class="body">
-                {{ $p->harga }}
-            </div>
-            </center>
-        </div>
-    </div>
 </div>
 
 @endsection

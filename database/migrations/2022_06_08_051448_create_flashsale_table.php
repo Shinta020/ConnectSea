@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBankTable extends Migration
+class CreateFlashsaleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateBankTable extends Migration
      */
     public function up()
     {
-        Schema::create('bank', function (Blueprint $table) {
-            $table->bigIncrements('bankid');
-            $table->string('namabank');
+        Schema::create('flashsale', function (Blueprint $table) {
+            $table->bigIncrements('idflashsale');
+            $table->integer('idproduk');
+            $table->integer('hargaflashsale');
+            $table->string('imgflashsale');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateBankTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bank');
+        Schema::dropIfExists('flashsale');
     }
 }

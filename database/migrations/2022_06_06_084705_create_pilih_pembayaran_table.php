@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFlashsaleTable extends Migration
+class CreatePilihPembayaranTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateFlashsaleTable extends Migration
      */
     public function up()
     {
-        Schema::create('flashsale', function (Blueprint $table) {
-            $table->bigIncrements('flashsaleid');
-            $table->time('waktu');
-            $table->integer('kodeproduk');
+        Schema::create('pilih_pembayaran', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('metode');
+            $table->string('jenis');
+            $table->integer('norek');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateFlashsaleTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flashsale');
+        Schema::dropIfExists('pilih_pembayaran');
     }
 }

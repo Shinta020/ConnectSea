@@ -64,8 +64,16 @@
 <div class="col-md-3">
 <br/>
 <br/>
-<h3 style="color: #004080; font-weight: bold;">Website Connectsea</h3>
-<img src="{{asset('connectsea\proud-of-indonesia.png')}}" style="width: 350px;">
+<center> <h4 style="color: #004080; font-weight: bold;">Website Connectsea</h4> </center>
+<img src="{{asset('connectsea\proud-of-indonesia.png')}}" style="width: 300px;">
+<br/>
+<br/>
+<br/>
+<p class="well" style="color: black;">
+    “Setinggi apapun pangkat yang dimiliki, kamu tetaplah pegawai. Sekecil apapun usaha yang kamu punya, kamu adalah bosnya.”
+    <br/>
+    – Bob Sadino
+</p>
 </div>
 
 @endsection
