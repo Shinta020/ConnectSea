@@ -16,7 +16,7 @@ class CreateUlasanTable extends Migration
         Schema::create('ulasan', function (Blueprint $table) {
             $table->bigIncrements('idulasan');
             $table->dateTime('tglulasan');
-            $table->integer('akunid');
+            $table->string('nama');
             $table->string('gambar');
             $table->string('desculasan');
             $table->integer('kodeproduk');

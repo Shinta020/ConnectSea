@@ -18,7 +18,7 @@
             <th><center>Jumlah</center></th>
 			<th><center>Harga</center></th>
             <th><center>Berat</center></th>
-            <th><center>Deskripsi</center></th>
+            <th><center>Deskripsi dan Manfaat</center></th>
             <th><center>Toko</center></th>
             <th><center>Aksi</center></th>
 		</tr>

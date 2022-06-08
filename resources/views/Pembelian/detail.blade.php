@@ -117,8 +117,8 @@
                                     <input type="date" id="tglulasan" name="tglulasan" required="required">
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label" for="akunid">Nama :</label>
-                                    <input type="text" class="form-control" id="akunid" name="akunid" required="required">
+                                    <label class="control-label" for="nama">Nama :</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" required="required">
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label" for="kodeproduk">Nama Produk :</label>

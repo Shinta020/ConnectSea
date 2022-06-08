@@ -4,6 +4,9 @@
 
 @section('content')
 
+    <br/>
+    <br/>
+
     <div class="container header-left background-all">
         <center>
             <br />

@@ -76,8 +76,6 @@ Route::post('/produk','ProdukController@store');
 Route::get('/produk/hapus/{kodeproduk}','ProdukController@hapus');
 Route::get('/produk/edit/{kodeproduk}','ProdukController@edit');
 Route::post('/produk/update', 'ProdukController@update');
-//Route::get('/produk/cari','ProdukController@cari');
-//Route::post('/produk/{id_toko}', 'ProdukController@produktoko')
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');

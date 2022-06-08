@@ -37,7 +37,7 @@
                 <input type="number" class="form-control" id="berat" name="berat" required="required">
             </div>
             <div class="form-group">
-                <label class="control-label" for="descproduk">Deskripsi :</label>
+                <label class="control-label" for="descproduk">Deskripsi dan Manfaat :</label>
                 <textarea class="form-control" rows="5" id="descproduk" name="descproduk" required="required"></textarea>
             </div>
             <div class="form-group">
