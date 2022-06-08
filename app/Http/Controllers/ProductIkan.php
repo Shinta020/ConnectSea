@@ -4,21 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\Produk;
-//use App\Produk;
-
 
 class ProductIkan extends Controller
 {
-    public function ikan(){
+    public function productList(){
         $produk = DB::table('produk')->get();
 		return view('Pembelian.ikan', ['produk' => $produk]);
 
 	}
-    public function productList()
-    {
-        $products = Produk::all();
+    // public function productList()
+    // {
+    //     $products = Produk::all();
 
-        return view('produk', compact('produk'));
-    }
+    //     return view('products', compact('products'));
+    // }
 }

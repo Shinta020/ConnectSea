@@ -256,7 +256,7 @@
 
             <div class="col-sm-4">
                 <div class="row-sm-5">
-                    <a href="/ikan">
+                    <a href="/pro">
                         <div id="box1"><span id="kategori">Hasil Laut</span>
                             <span class="glyphicon glyphicon-chevron-right" id="panah2"></span>
                         </div>
@@ -341,10 +341,12 @@
                 </div>
             </div>
             <div class="col-sm-1">
-                <div id="panah"><a class="right" href="#myCarousel">
+
+                <div id="panah"><a class="right" href="/flashsale">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
+
             </div>
 
             <br>

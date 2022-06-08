@@ -167,10 +167,10 @@
                 <div class="col-sm-6">
                     <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" value="{{ $p->kodeproduk }}" name="id">
-                        <input type="hidden" value="{{ $p->namaproduk }}" name="name">
-                        <input type="hidden" value="{{ $p->harga }}" name="price">
-                        <input type="hidden" value="{{ $p->imgproduk }}"  name="image">
+                        <input type="hidden" value="{{ $p->kodeproduk }}" name="kodeproduk">
+                        <input type="hidden" value="{{ $p->namaproduk }}" name="namaproduk">
+                        <input type="hidden" value="{{ $p->harga }}" name="harga">
+                        <input type="hidden" value="{{ $p->imgproduk }}"  name="imgproduk">
                         <input type="hidden" value="1" name="quantity">
                         <button class="px-4 py-2 text-white bg-blue-800 rounded">Add To Cart</button>
                     </form>
@@ -192,5 +192,6 @@
             <td>{{ $p->imgproduk }}</td>
         </tr> --}}
     @endforeach
+
 
 @endsection

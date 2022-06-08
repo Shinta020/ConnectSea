@@ -134,7 +134,7 @@
 
 
                 <div class="col-md-1">
-                    <a href="/keranjangbelanja"><img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header"></a>
+                    <a href="/cart"><img src="{{asset('connectsea\keranjang-belanja-header.png')}}" width="40px" height="40px" class="keranjang-belanja-header"></a>
                 </div>
 
             </div>

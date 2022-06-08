@@ -20,8 +20,8 @@
         @foreach($produk as $p)
     <div class="col-sm-2">
         <img src="connectsea/{{$p -> imgproduk}}" alt="ikan1" width="150" height="150">
-            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }}</a> <br>Rp {{ $p->harga }}/KG
+            <a href="/getdetailproduk/{{ $p->kodeproduk }}">{{ $p->namaproduk }} <br>Rp {{ $p->harga }}/KG
+            </a>
     </div>
     @endforeach
 @endsection
-
