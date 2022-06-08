@@ -74,6 +74,7 @@ Route::post('/produk','ProdukController@store');
 Route::get('/produk/hapus/{kodeproduk}','ProdukController@hapus');
 Route::get('/produk/edit/{kodeproduk}','ProdukController@edit');
 Route::post('/produk/update', 'ProdukController@update');
+//Route::post('/produk/{id_toko}', 'ProdukController@produktoko')
 
 //route keranjang belanja by Nur Nindya Risnina
 Route::get('/cart','Pembelian\KeranjangBelanja@index');
@@ -102,3 +103,6 @@ Route::get('/startselling','StartsellingController@index');
 Route::get('/flashsale', function () {
     return view('flashsale.index');
 });
+
+// Flash Sale by Cahya
+//Route::post('/flashsale','FlashsaleController@index');
