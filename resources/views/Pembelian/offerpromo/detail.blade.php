@@ -7,7 +7,7 @@
 <div class="container header-left background-all">
 	<h3 class="text-center">Detail Voucher</h3>
 
-	<a href="/ofpro2" class="btn btn-secondary"> Kembali</a>
+	<a href="/ofpro" class="btn btn-secondary"> Kembali</a>
 
 	<br/>
 	<br/>

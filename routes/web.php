@@ -106,3 +106,14 @@ Route::get('/flashsale', function () {
 
 // Flash Sale by Cahya
 //Route::post('/flashsale','FlashsaleController@index');
+
+// Shinta - Order Detail
+Route::get('/orderdetail', function () {
+    return view('Pembelian.orderdetail');
+});
+Route::get('/orderdetail', 'Pembelian\OrderDetail@orderdetail');
+Route::get('/orderdetail/edit/{id}', 'Pembelian\OrderDetail@edit');
+Route::post('/orderdetail/update', 'Pembelian\OrderDetail@update');
+Route::get('/orderdetail/pembayaran', 'Pembelian\OrderDetail@pembayaran');
+Route::get('/pembayaran1', 'Pembelian\OrderDetail@index');
+
