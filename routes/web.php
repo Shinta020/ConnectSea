@@ -61,7 +61,7 @@ Route::get('/profile/delete/{id}','ProfileController@delete');
 
 //product per kategori
 //by Septica Tiara Indah Permatasari
-Route::get('/ikan', 'ProductIkan@ikan');
+// Route::get('/ikan', 'ProductIkan@ikan');
 Route::get('/bibit', 'ProductBibit@bibit');
 Route::get('/pakan', 'ProductPakan@pakan');
 
@@ -77,12 +77,6 @@ Route::get('/produk/hapus/{kodeproduk}','ProdukController@hapus');
 Route::get('/produk/edit/{kodeproduk}','ProdukController@edit');
 Route::post('/produk/update', 'ProdukController@update');
 //Route::post('/produk/{id_toko}', 'ProdukController@produktoko')
-
-//route keranjang belanja by Nur Nindya Risnina
-Route::get('/cart','Pembelian\KeranjangBelanja@index');
-Route::get('/cart/hapus/{id}', 'Pembelian\KeranjangBelanja@hapus')->where("id","[0-9]+");
-Route::get('/transaksi/tambah', 'Pembelian\KeranjangBelanja@tambah_transaksi');
-
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');
@@ -102,20 +96,26 @@ Route::post('/ofpro2/update','Pembelian\OfferandPromo@update');
 //route CRUD
 Route::get('/startselling','StartsellingController@index');
 
-//Nina
-Route::get('/flashsale', function () {
-    return view('flashsale.index');
-});
+// //Nina
+// Route::get('/flashsale', function () {
+//     return view('flashsale.index');
+// });
 
 // Flash Sale by Cahya
 //Route::post('/flashsale','FlashsaleController@index');
 
-Route::get('/pro', [ProductIkanController::class, 'productList'])->name('products.list');
-Route::get('cart', [Pembelian\CartController::class, 'cartList'])->name('cart.list');
-Route::post('cart', [Pembelian\CartController::class, 'addToCart'])->name('cart.store');
-//Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
-//Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
-//Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
+Route::get('/pro', 'ProductIkan@productList');
+Route::get('/cart', 'Pembelian\Cart@cartList')->name('cart.list');;
+Route::post('/cart', 'Pembelian\Cart@addToCart')->name('cart.store');
+Route::post('/update-cart', 'Pembelian\Cart@updateCart')->name('cart.update');;
+Route::post('/remove', 'Pembelian\Cart@removeCart')->name('cart.remove');
+Route::post('/clear', 'Pembelian\Cart@clearAllCart')->name('cart.clear');
+Route::post('/orderdetail', 'Pembelian\Cart@checkout');
+
+// Route::get('/pro', [ProductIkan::class, 'productList'])->name('products.list');
+//Route::get('/cart', [Pembelian\Cart::class, 'cartList'])->name('cart.list');
+//Route::post('/cart', [Pembelian\Cart::class, 'addToCart'])->name('cart.store');
+
 
 // Shinta - Order Detail
 Route::get('/orderdetail', function () {
@@ -127,3 +127,7 @@ Route::post('/orderdetail/update', 'Pembelian\OrderDetail@update');
 Route::get('/orderdetail/pembayaran', 'Pembelian\OrderDetail@pembayaran');
 Route::get('/pembayaran1', 'Pembelian\OrderDetail@index');
 
+Route::get('/historyorder','HistoryOrderController@history');
+
+
+Route::get('/flashsale','FlashsaleController@index');
