@@ -49,10 +49,10 @@
     </style>
     @foreach ($produk as $p)
         <div class="container header-left background-all">
-            <h1>KAKAP MERAH</h1>
+            <h1>{{ $p->namaproduk }}</h1>
             <div class="row">
                 <div class="col-sm-3">
-                    <center><img src="\connectsea\kakapmerah.jpg" alt="Cinque Terre" id="tuna"></center>
+                    <center><img src="connectsea/{{$p -> imgproduk}}" alt="Cinque Terre" id="tuna"></center>
                 </div>
                 <h2>Detail Produk</h2>
                 <div class="col-sm-9">
