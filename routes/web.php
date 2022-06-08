@@ -109,9 +109,21 @@ Route::get('/flashsale', function () {
 
 // Flash Sale by Cahya
 //Route::post('/flashsale','FlashsaleController@index');
+
 Route::get('/pro', [ProductIkanController::class, 'productList'])->name('products.list');
 Route::get('cart', [Pembelian\CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [Pembelian\CartController::class, 'addToCart'])->name('cart.store');
 //Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
 //Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
 //Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
+
+// Shinta - Order Detail
+Route::get('/orderdetail', function () {
+    return view('Pembelian.orderdetail');
+});
+Route::get('/orderdetail', 'Pembelian\OrderDetail@orderdetail');
+Route::get('/orderdetail/edit/{id}', 'Pembelian\OrderDetail@edit');
+Route::post('/orderdetail/update', 'Pembelian\OrderDetail@update');
+Route::get('/orderdetail/pembayaran', 'Pembelian\OrderDetail@pembayaran');
+Route::get('/pembayaran1', 'Pembelian\OrderDetail@index');
+
