@@ -10,24 +10,20 @@
                 <div class="card card-primary card-outline">
                     <div class="card-body box-profile">
                     {{-- <div class="text-center">
-                        <img src="connectsea\foto-profil-2.jpg" width="100px" height="100px" class="img-circle">
-                    </div>
+                        <img src="connectsea/{{ $p->image }}" width="100px" height="100px" class="img-circle">
+                    </div> --}}
                     <form>
+                        <div class="text-center">
+                            <img src="connectsea/{{ $p->image }}" width="100px" height="100px" class="img-circle">
+                        </div>
                         <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                            <input type="file" name="foto" id="foto">
+                            <div class="col">
+                                <div class="form-group">
+                                <input type="file"value="{{ $p->image }}" name="image" id="image">
+                                </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Upload</button>
-                            </div>
-                        </div>
-                        </div>
-                    </form> --}}
-                    <hr>
-                    <form>
+                        <hr>
                         <div class="form-group">
                         <label for="name">Nama</label>
                         <input type="text" required="required" name="nama" id="nama" value="{{ $p->name }}" class="form-control">

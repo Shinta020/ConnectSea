@@ -50,8 +50,8 @@ Route::get('/logout', 'LoginController@logout');
 
 //Belva Rizki - Chat
 Route::get('/chat', 'ChatsController@index');
-Route::get('messages', 'ChatsController@fetchMessages');
-Route::post('messages', 'ChatsController@sendMessage');
+// Route::get('messages', 'ChatsController@fetchMessages');
+// Route::post('messages', 'ChatsController@sendMessage');
 
 //Belva Rizki - Profile
 Route::get('/profile', 'ProfileController@profile');
@@ -86,6 +86,7 @@ Route::get('/transaksi/tambah', 'Pembelian\KeranjangBelanja@tambah_transaksi');
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');
+Route::get('/historyorder/delete/{historyid}', 'HistoryOrderController@delete');
 
 // Shinta - Offer and Promo
 Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');

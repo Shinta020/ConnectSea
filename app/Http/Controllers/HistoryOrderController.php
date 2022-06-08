@@ -16,4 +16,13 @@ class HistoryOrderController extends Controller
     	return view('pembelian.historyorder',['history_order' => $history_order]);
 
     }
+
+    public function delete($historyid)
+    {
+        // menghapus data user berdasarkan id yang dipilih
+        DB::table('history_order')->where('historyid',$historyid)->delete();
+
+        // alihkan halaman ke halaman user
+        return redirect('/historyorder');
+    }
 }

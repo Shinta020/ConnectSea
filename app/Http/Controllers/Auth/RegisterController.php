@@ -72,7 +72,7 @@ class RegisterController extends Controller
             'notelp' => $data['notelp'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-         //   'image' => $data['image'],
+            'image' => $data['image'],
         ]);
     }
 }
