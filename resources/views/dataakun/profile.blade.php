@@ -87,11 +87,11 @@
           <div class="card-body">
             <a href="/historyorder" class="btn btn-info btn-block">History Orders</a>
             <br>
-            <a href="/profile/edit" class="btn btn-info btn-block">Pendings Review</a>
+            <a class="btn btn-info btn-block">Pendings Review</a>
             <br>
-            <a href="/profile/edit" class="btn btn-info btn-block">FAQ</a>
+            <a href="/help" class="btn btn-info btn-block">FAQ</a>
             <br>
-            <a href="/profile/edit" class="btn btn-info btn-block">Change Password</a>
+            <a href="/" class="btn btn-info btn-block">Change Password</a>
             <br>
             </div>
         </div>
