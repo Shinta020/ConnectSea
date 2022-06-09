@@ -12,10 +12,5 @@ class ProductIkan extends Controller
 		return view('Pembelian.ikan', ['produk' => $produk]);
 
 	}
-    // public function productList()
-    // {
-    //     $products = Produk::all();
 
-    //     return view('products', compact('products'));
-    // }
 }

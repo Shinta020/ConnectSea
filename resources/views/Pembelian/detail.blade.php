@@ -52,9 +52,9 @@
             <h1>{{ $p->namaproduk }}</h1>
             <div class="row">
                 <div class="col-sm-3">
-                    <center><img src="connectsea/{{$p -> imgproduk}}" alt="Cinque Terre" id="tuna"></center>
+               <!--     <center><img src="connectsea/{{$p -> imgproduk}}" alt="Cinque Terre" id="tuna"></center> -->
                 </div>
-                <h2>Detail Produk</h2>
+                <h2> Detail Produk</h2>
                 <div class="col-sm-9">
                     <div id="kotak">
                         <div class="row">
@@ -81,14 +81,10 @@
                 </div>
             </div>
 
-            <h2> Manfaat </h2>
+            <h2> Deskripsi dan Manfaat </h2>
             <div class="row-sm-12">
                 <div id="kotak2">
-                    <p>Kakap merah mengandung vitamin D dan vitamin E. Kandungan vitamin D dapat membuat tulang kuat dan
-                        vitamin
-                        E mendukung pertumbuhan sel darah merah yang sehat, membantu transportasi oksigen, dan menjadi
-                        antioksidan alami bagi tubuh. Kakap merah mengandung magnesium dan selenium yang penting bagi tubuh.
-                    </p>
+                    <p>{{ $p->descproduk }}</p>
                 </div>
             </div>
             <hr>
@@ -151,32 +147,29 @@
             <!-- Tampilan Ulasan -->
             <div class="row">
                 <div class="col-sm-1">
-                    <img src="\connectsea\fotoulasan.png" id="foto">
+                  <!--  <img src="\connectsea\fotoulasan.png" id="foto"> -->
                 </div>
                 <div class="col-sm-2">
                     <div class="row">
-                        <h6>Olden Cantika </h6><br>
+                    <!--    <h6>Olden Cantika </h6><br> -->
                     </div>
-                </div>
-                <div class="col-sm-1">
-                    <img src="\connectsea\bintang.png" id="foto">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-7">
                     <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" value="{{ $p->kodeproduk }}" name="kodeproduk">
                         <input type="hidden" value="{{ $p->namaproduk }}" name="namaproduk">
                         <input type="hidden" value="{{ $p->harga }}" name="harga">
-                        <input type="hidden" value="{{ $p->imgproduk }}"  name="imgproduk">
+                        <input type="hidden" value="{{ $p->imgproduk }}" name="imgproduk">
                         <input type="hidden" value="1" name="quantity">
-                        <button class="px-4 py-2 text-white bg-blue-800 rounded">Add To Cart</button>
+                       <center><button class="btn btn-primary rounded">Add to Cart</button></center>
                     </form>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <div class="button text-left">
                         <a href="https://wa.me/6285806951149" class="btn btn-primary text-right">Chat</a>
                     </div>
