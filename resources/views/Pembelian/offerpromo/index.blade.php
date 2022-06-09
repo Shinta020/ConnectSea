@@ -3,11 +3,16 @@
 @section('content')
 
 <div class="container">
-	<h3 class="text-center">Promo and Voucher</h3>
-	<a href="/ofpro2/tambah" class="btn btn-secondary"> + Tambah Voucher</a>
 	<br/>
+    <h3 class="text-center" style="color: #004080; font-weight: bold;">Promo and Voucher</h3>
+	<br/>
+    <a href="/ofpro2/tambah">
+        <button type="submit" class="btn btn-primary">+ Tambah Voucher</button>
+    </a>
+	<br/>
+    <br/>
 
-	<table border="1" class="table table-primary mt-3">
+	<table border="2" class="table table-primary mt-3">
 
 		<tr>
             <th>No</th>
@@ -33,9 +38,6 @@
 		</tr>
 		@endforeach
 	</table>
-
-
-
 </div>
 
 @endsection
