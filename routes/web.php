@@ -61,9 +61,12 @@ Route::get('/profile/delete/{id}','ProfileController@delete');
 
 //product per kategori
 //by Septica Tiara Indah Permatasari
-// Route::get('/ikan', 'ProductIkan@ikan');
-Route::get('/bibit', 'ProductBibit@bibit');
-Route::get('/pakan', 'ProductPakan@pakan');
+//Route::get('/ikan', 'ProductIkan@ikan');
+//Route::get('/bibit', 'ProductBibit@bibit');
+//Route::get('/pakan', 'ProductPakan@pakan');
+Route::get('/ikan', 'ProductIkan@productList');
+Route::get('/bibit', 'ProductBibit@productList');
+Route::get('/pakan', 'ProductPakan@productList');
 
 Route::get('/produk','Pembelian\UlasanProduk@displayProduk');
 
@@ -100,7 +103,7 @@ Route::get('/flashsale','FlashsaleController@index');
 Route::get('/flashsale/tambah','FlashsaleController@tambah');
 Route::post('/flashsale','FlashsaleController@store');
 
-Route::get('/pro', 'ProductIkan@productList');
+
 Route::get('/cart', 'Pembelian\Cart@cartList')->name('cart.list');;
 Route::post('/cart', 'Pembelian\Cart@addToCart')->name('cart.store');
 Route::post('/update-cart', 'Pembelian\Cart@updateCart')->name('cart.update');;

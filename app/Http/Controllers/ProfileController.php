@@ -59,6 +59,6 @@ class ProfileController extends Controller
         DB::table('users')->where('id',$id)->delete();
 
         // alihkan halaman ke halaman user
-        return redirect('/profile');
+        return redirect('/');
     }
 }
