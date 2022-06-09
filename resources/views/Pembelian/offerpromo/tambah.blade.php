@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-	<h3 class="text-center">Promo and Voucher</h3>
+	<h3 class="text-center">Tambah Voucher</h3>
 
 	<a href="/ofpro2" class="btn btn-secondary"> Kembali</a>
 
