@@ -56,7 +56,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="box2">
-                    <a href="https://api.whatsapp.com/send?phone=6281284025527"><span id="kategori"><center>Kontak Seller</center></span>
+                    <a href="https://wa.me/+6281284025527?text=Halo%20admin%20saya%20ingin%20melakukan%20pembayaran%20"><span id="kategori"><center>Kontak Seller</center></span>
                     </a>
                 </div>
             </div>

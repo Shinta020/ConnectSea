@@ -44,7 +44,7 @@
             color: rgb(255, 255, 255);
         }
 </style>
-<div class="kotak">
+{{-- <div class="kotak">
     <div class="row row-cols-1">
         <div class="row">
         </div>
@@ -69,11 +69,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <div class="kotak2">
     <div class="row-sm-10">
         <div class="box1"><span id="kategori2">
-            <h4>Nama Toko</h4> <p> PESANAN SELESAI </p>
+            <h4>Toko Pak Firman</h4> <p> PESANAN SELESAI </p>
             <hr>
             <div class="col-sm-2">
                 <div class="kotak3">
@@ -87,12 +87,12 @@
             </div>
             <div class="col-sm-2">
                 <div class="kotak3">
-                    <h4>1x</h4>
+                    <h4>10x</h4>
                 </div>
             </div>
             <div class="col-sm-2">
                 <div class="kotak3">
-                    <h4>Rp 15.000</h4>
+                    <h4>Rp 150.000</h4>
                 </div>
             </div>
             <br>
@@ -101,37 +101,37 @@
             <br>
             <br>
             <hr>
-            <div class="col-sm-6">
+            <div class="col-sm-8">
                 <div class="kotak3">
-                    <p>Paket telah diterima oleh: . . .</p>
+                    <p>Paket telah diterima oleh: Belva (yang bersangkutan)</p>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="box2">
-                    <span id="kategori"><center>Beri Ulasan</center></span>
+                    <a href="/getdetailproduk/2"><span id="kategori"><center>Beri Ulasan</center></span></a>
                 </div>
             </div>
-            <div class="col-sm-3">
+            {{-- <div class="col-sm-3">
                 <div class="box2">
                     <span id="kategori"><center>Beli Lagi</center></span>
                 </div>
-            </div>
+            </div> --}}
         </span></div>
     </div>
     <br>
     <br>
     <div class="row-sm-10">
         <div class="box1"><span id="kategori2">
-            <h4>Nama Toko</h4> <p> PESANAN SELESAI </p>
+            <h4>Agus Fish Store</h4> <p> PESANAN SELESAI </p>
             <hr>
             <div class="col-sm-2">
                 <div class="kotak3">
-                    <img src=" {{asset('connectsea\tuna.jpg')}}"width="80px" height="80px" class="rounded">
+                    <img src=" {{asset('connectsea\gurame.jpg')}}"width="80px" height="80px" class="rounded">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="kotak3">
-                    <h4>Ikan Tuna (FRESH!!!)</h4>
+                    <h4>Ikan Gurame</h4>
                 </div>
             </div>
             <div class="col-sm-2">
@@ -141,7 +141,7 @@
             </div>
             <div class="col-sm-2">
                 <div class="kotak3">
-                    <h4>Rp 50.000</h4>
+                    <h4>Rp 10.000</h4>
                 </div>
             </div>
             <br>
@@ -150,21 +150,21 @@
             <br>
             <br>
             <hr>
-            <div class="col-sm-6">
+            <div class="col-sm-8">
                 <div class="kotak3">
-                    <p>Paket telah diterima oleh: . . .</p>
+                    <p>Paket telah diterima oleh: Alvin (Anggota Keluarga / Teman)</p>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="box2">
-                    <span id="kategori"><center>Beri Ulasan</center></span>
+                    <a href="/getdetailproduk/3"><span id="kategori"><center>Beri Ulasan</center></span></a>
                 </div>
             </div>
-            <div class="col-sm-3">
+            {{-- <div class="col-sm-3">
                 <div class="box2">
                     <span id="kategori"><center>Beli Lagi</center></span>
                 </div>
-            </div>
+            </div> --}}
         </span></div>
     </div>
 </div>
