@@ -97,7 +97,7 @@
             <div class="col-md-10"> </div>
             <div class="col-md-2">
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Nilai</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Beri Ulasan</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -107,7 +107,7 @@
                       <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <center><strong><h4 class="modal-title" style="color: black;">Nilai Produk</h4></strong></center>
+                            <center><strong><h4 class="modal-title" style="color: black;">Ulasan Produk</h4></strong></center>
                         </div>
                         <form class="form-group" action="/getdetailproduk" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}

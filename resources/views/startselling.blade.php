@@ -113,7 +113,7 @@
                                     <span class="glyphicon glyphicon-usd"></span>
                                     <br/>
                                     <br/>
-                                    <a href="/produk/tambah"><button type="button" class="btn btn-default">Flashsale</button></a>
+                                    <a href="/flashsale/tambah"><button type="button" class="btn btn-default">Flashsale</button></a>
                                 </center>
                             </p>
                             <br />

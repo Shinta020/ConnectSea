@@ -64,6 +64,7 @@ class ProdukController extends Controller
     {
         // mengambil data produk berdasarkan id yang dipilih
         $produk = DB::table('produk')->where('kodeproduk',$kodeproduk)->get();
+
         // passing data produk yang didapat ke view edit.blade.php
         return view('produk.edit',['produk' => $produk]);
 
