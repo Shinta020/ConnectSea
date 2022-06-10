@@ -96,11 +96,10 @@
                                 </div>
                                 <div class="modal-footer">
                                     <div class="col-sm-10">
-                                        <a href="/chat"
-                                            class="btn btn-primary" role="button">Kontak Seller</a>
+                                        <a href="/chat" class="btn btn-primary" role="button">Kontak Seller</a>
                                     </div>
                                     <div class="col-sm-2">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        <a href="/orderdetail" class="btn btn-danger" role="button">Close</a>
                                     </div>
                                 </div>
                             </div>

@@ -16,7 +16,7 @@ class FlashsaleController extends Controller
             ->get();
 
     	// mengirim data produk ke view index
-    	return view('flashsale.index',['flashsale' => $flashsale]);
+    	return view('Pembelian.flashsale.index',['flashsale' => $flashsale]);
 
     }
 
@@ -28,7 +28,7 @@ class FlashsaleController extends Controller
         $produk = DB::table('produk')->orderBy('namaproduk', 'asc')->get();
 
         // memanggil view tambah
-        return view('flashsale.tambah', ['produk' => $produk]);
+        return view('Penjualan.flashsale.tambah', ['produk' => $produk]);
 
     }
 

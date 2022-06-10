@@ -45,11 +45,11 @@ Route::get('/help', function () {
     return view('dataakun.help');
 });
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@displayHalamanUtama')->name('home');
 Route::get('/logout', 'LoginController@logout');
 
 //Belva Rizki - Chat
-Route::get('/chat', 'ChatsController@index');
+Route::get('/chat', 'ChatsController@displayHalamanChat');
 // Route::get('messages', 'ChatsController@fetchMessages');
 // Route::post('messages', 'ChatsController@sendMessage');
 
@@ -85,18 +85,18 @@ Route::get('/historyorder','HistoryOrderController@history');
 Route::get('/historyorder/delete/{historyid}', 'HistoryOrderController@delete');
 
 // Shinta - Offer and Promo
-Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');
-Route::get('/ofpro2', 'Pembelian\OfferandPromo@index');
-Route::get('/ofpro2/tambah','Pembelian\OfferandPromo@tambah');
-Route::post('/ofpro2/store','Pembelian\OfferandPromo@store');
-Route::get('/ofpro2/detail/{id}','Pembelian\OfferandPromo@view');
+Route::get('/ofpro', 'Pembelian\OfferandPromo@displayHalamanOfferdanPromo');
+Route::get('/ofpro2', 'Pembelian\OfferandPromo@displayHalamanDaftarVoucher');
+Route::get('/ofpro2/tambah','Pembelian\OfferandPromo@displayHalamanTambahVoucher');
+Route::post('/ofpro2/store','Pembelian\OfferandPromo@getData');
+Route::get('/ofpro2/detail/{id}','Pembelian\OfferandPromo@displayHalamanDetailVoucher');
 Route::get('/ofpro2/hapus/{id}','Pembelian\OfferandPromo@hapus');
 Route::get('/ofpro2/edit/{id}','Pembelian\OfferandPromo@edit');
 Route::post('/ofpro2/update','Pembelian\OfferandPromo@update');
 
 // Start Selling by Cahya
 //route CRUD
-Route::get('/startselling','StartsellingController@index');
+Route::get('/startselling','StartsellingController@displayHalamanStartSelling');
 
 //Flash Sale by Cahya
 Route::get('/flashsale','FlashsaleController@index');
@@ -120,13 +120,11 @@ Route::post('/orderdetail', 'Pembelian\Cart@checkout');
 Route::get('/orderdetail', function () {
     return view('Pembelian.orderdetail');
 });
-Route::get('/orderdetail', 'Pembelian\OrderDetail@orderdetail');
-Route::get('/orderdetail/edit/{id}', 'Pembelian\OrderDetail@edit');
-Route::post('/orderdetail/update', 'Pembelian\OrderDetail@update');
-Route::get('/orderdetail/pembayaran', 'Pembelian\OrderDetail@pembayaran');
-Route::get('/pembayaran1', 'Pembelian\OrderDetail@index');
+Route::get('/orderdetail', 'Pembelian\OrderDetail@displayHalamanOrderDetail');
+Route::get('/orderdetail/edit/{id}', 'Pembelian\OrderDetail@displayHalamanEditAlamatPengiriman');
+Route::post('/orderdetail/update', 'Pembelian\OrderDetail@simpanAlamatPengiriman');
+
 
 Route::get('/historyorder','HistoryOrderController@history');
-
 
 Route::get('/flashsale','FlashsaleController@index');

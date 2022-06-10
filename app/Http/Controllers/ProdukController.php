@@ -16,7 +16,7 @@ class ProdukController extends Controller
             ->get();
 
     	// mengirim data produk ke view index
-    	return view('produk.index',['produk' => $produk]);
+    	return view('Penjualan.produk.index',['produk' => $produk]);
 
     }
 
@@ -26,7 +26,7 @@ class ProdukController extends Controller
         // memanggil view tambah
         $users = DB::table('users')->orderBy('name', 'asc')->get();
 
-        return view('produk.tambah', ['users' => $users]);
+        return view('Penjualan.produk.tambah', ['users' => $users]);
     }
 
     // method untuk insert data ke table produk
@@ -66,7 +66,7 @@ class ProdukController extends Controller
         $produk = DB::table('produk')->where('kodeproduk',$kodeproduk)->get();
 
         // passing data produk yang didapat ke view edit.blade.php
-        return view('produk.edit',['produk' => $produk]);
+        return view('Penjualan.produk.edit',['produk' => $produk]);
 
     }
 

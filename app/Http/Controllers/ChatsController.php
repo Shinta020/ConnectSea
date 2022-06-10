@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class ChatsController extends Controller
 {
-    public function index() {
+    public function displayHalamanChat() {
 
         return view('chat');
 

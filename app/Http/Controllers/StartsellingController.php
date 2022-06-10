@@ -8,12 +8,12 @@ use Illuminate\Support\Facades\DB;
 
 class StartsellingController extends Controller
 {
-    public function index()
+    public function displayHalamanStartSelling()
     {
     	// mengambil data dari table toko
     	$users = DB::table('users')->get();
 
     	// mengirim data toko ke view index
-    	return view('startselling',['users' => $users]);
+    	return view('Penjualan.startselling',['users' => $users]);
     }
 }

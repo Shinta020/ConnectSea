@@ -8,40 +8,41 @@ use Illuminate\Support\Facades\DB;
 
 class OfferandPromo extends Controller
 {
-    public function ofpro()
+    public function displayHalamanOfferdanPromo()
     {
+        // getData(voucher)
         $voucher = DB::table('promo_and_voucher')->get();
+        // display(voucher)
         return view('Pembelian.offerpromo.ofpro',['voucher' => $voucher]);
 
     }
 
-    public function index()
+    public function displayHalamanDaftarVoucher()
     {
-    	// mengambil data dari table offer_and_promo
+    	// mengambil data dari table offer_and_promo (getData(voucher))
     	$voucher = DB::table('promo_and_voucher')->get();
-        //$voucher = DB::table('promo_and_voucher')->paginate(5);
 
     	// mengirim data voucher ke view index
-    	return view('Pembelian.offerpromo.index',['voucher' => $voucher]);
+    	return view('Penjualan.OfferPromo.index',['voucher' => $voucher]);
 
     }
     // method untuk menampilkan view form tambah voucher
-    public function tambah()
+    public function displayHalamanTambahVoucher()
     {
         // memanggil view tambah
-        return view('Pembelian.offerpromo.tambah');
+        return view('Penjualan.OfferPromo.tambah');
 
     }
     // method untuk insert data ke table promo_and_voucher
-    public function store(Request $request)
+    public function simpanData(Request $voucher)
     {
 
 	// insert data ke table promo_and_voucher
 	    DB::table('promo_and_voucher')->insert([
-		    'kodevoucher' => $request->kode,
-		    'desc' => $request->deskripsi,
-		    'masaberlaku' => $request->exp,
-		    'imgvoucher' => $request->img
+		    'kodevoucher' => $voucher->kode,
+		    'desc' => $voucher->deskripsi,
+		    'masaberlaku' => $voucher->exp,
+		    'imgvoucher' => $voucher->img
 	]);
 	// alihkan halaman ke halaman offer and promo
 	return redirect('/ofpro');
@@ -49,12 +50,12 @@ class OfferandPromo extends Controller
     }
 
     // method untuk view detail voucher
-    public function view($voucher)
+    public function displayHalamanDetailVoucher($voucher)
     {
 
-	// mengambil data voucher berdasarkan id yang dipilih
+	// getData(detail)
 	$voucher = DB::table('promo_and_voucher')->where('id',$voucher)->get();
-	// passing data voucher yang didapat ke view edit.blade.php
+	// display(detail)
 	return view('Pembelian.offerpromo.detail',['voucher' => $voucher]);
 
     }
@@ -76,7 +77,7 @@ class OfferandPromo extends Controller
 	// mengambil data voucher berdasarkan id yang dipilih
 	$voucher = DB::table('promo_and_voucher')->where('id',$id)->get();
 	// passing data voucher yang didapat ke view edit.blade.php
-	return view('Pembelian.offerpromo.edit',['voucher' => $voucher]);
+	return view('Penjualan.OfferPromo.edit',['voucher' => $voucher]);
 
     }
 
