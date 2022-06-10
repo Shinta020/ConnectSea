@@ -82,7 +82,6 @@ Route::post('/produk/update', 'ProdukController@update');
 
 //Belva Rizki - History Order
 Route::get('/historyorder','HistoryOrderController@history');
-Route::get('/historyorder/delete/{historyid}', 'HistoryOrderController@delete');
 
 // Shinta - Offer and Promo
 Route::get('/ofpro', 'Pembelian\OfferandPromo@ofpro');

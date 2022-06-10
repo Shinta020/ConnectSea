@@ -24,12 +24,8 @@ class CreateProdukTable extends Migration
             $table->string('imgproduk');
             $table->integer('id_toko');
             $table->timestamps();
-           // $table->string('namatokoproduk')->unsigned();
         });
 
-//        Schema::table('produk', function (Blueprint $table) {
-//            $table->foreign('namatokoproduk')->references('namatoko')->on('toko')->onDelete('cascade')->onUpdate('cascade');
-//        });
     }
 
     /**
