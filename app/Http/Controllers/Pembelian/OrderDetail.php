@@ -17,6 +17,7 @@ class OrderDetail extends Controller
     	return view('Pembelian.OrderDetail.orderdetail',['users' => $users]);
 
     }
+
     public function orderdetail2()
     {
 
