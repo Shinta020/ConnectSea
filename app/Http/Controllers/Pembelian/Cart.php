@@ -31,7 +31,6 @@ class Cart extends Controller
         return view('pembelian.cart', compact('cartItems'));
     }
 
-
     public function addToCart(Request $request)
     {
         \Cart::add([
@@ -82,19 +81,13 @@ class Cart extends Controller
 
         return redirect()->route('cart.list');
     }
-    public function checkout(Request $request)
-    {
-    \Cart::add([
-        'kodeproduk' => $request->kodeproduk,
-        'kategoriproduk' => $request->kategoriproduk,
-        'namaproduk' => $request->namaproduk,
-        'harga' => $request->harga,
-        'quantity' => $request->quantity,
-        'imgproduk' => $request->imgproduk,
-    ]);
-    session()->flash('success', 'Product is Added to Cart Successfully !');
 
-    return redirect()->route('/orderdetail');
+    public function checkout(Request $request)
+    {$cartItems = \Cart::getContent();
+        //$cartItems = DB::table('produk')->get();
+        //$cartItems = DB::table('produk')->get();
+        // dd($cartItems);
+        return view('Pembelian.Orderdetail.orderdetail', compact('cartItems'));
 }
 
 
